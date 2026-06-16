@@ -1,0 +1,1738 @@
+{
+    "description": "Topology Zoo network FCCN, with policy based on Gao-Rexford conditions.",
+    "nodes": [
+        "Portalegre",
+        "Evora",
+        "Guarda",
+        "Castelo Branco",
+        "Tomar",
+        "Leiria",
+        "Lisboa",
+        "Samtarem",
+        "Setubal",
+        "Ponta Delgada",
+        "Beja",
+        "Faro",
+        "Funchal",
+        "Viseu",
+        "Covilha",
+        "Viana de Castelo",
+        "Barcelos",
+        "Braga",
+        "Villa Real",
+        "Bragancia",
+        "Porto",
+        "Aveiro",
+        "Coimbra"
+    ],
+    "adjacency_list": {
+        "Portalegre": [
+            "Lisboa"
+        ],
+        "Evora": [
+            "Lisboa"
+        ],
+        "Guarda": [
+            "Porto"
+        ],
+        "Castelo Branco": [
+            "Lisboa"
+        ],
+        "Tomar": [
+            "Lisboa"
+        ],
+        "Leiria": [
+            "Coimbra",
+            "Lisboa"
+        ],
+        "Lisboa": [
+            "Portalegre",
+            "Evora",
+            "Castelo Branco",
+            "Tomar",
+            "Leiria",
+            "Samtarem",
+            "Setubal",
+            "Ponta Delgada",
+            "Funchal",
+            "Viseu",
+            "Coimbra"
+        ],
+        "Samtarem": [
+            "Lisboa",
+            "Coimbra"
+        ],
+        "Setubal": [
+            "Lisboa",
+            "Beja",
+            "Faro"
+        ],
+        "Ponta Delgada": [
+            "Lisboa"
+        ],
+        "Beja": [
+            "Setubal"
+        ],
+        "Faro": [
+            "Setubal"
+        ],
+        "Funchal": [
+            "Lisboa"
+        ],
+        "Viseu": [
+            "Lisboa"
+        ],
+        "Covilha": [
+            "Porto"
+        ],
+        "Viana de Castelo": [
+            "Porto"
+        ],
+        "Barcelos": [
+            "Porto"
+        ],
+        "Braga": [
+            "Porto"
+        ],
+        "Villa Real": [
+            "Porto"
+        ],
+        "Bragancia": [
+            "Porto"
+        ],
+        "Porto": [
+            "Guarda",
+            "Covilha",
+            "Viana de Castelo",
+            "Barcelos",
+            "Braga",
+            "Villa Real",
+            "Bragancia",
+            "Aveiro",
+            "Coimbra"
+        ],
+        "Aveiro": [
+            "Porto",
+            "Coimbra"
+        ],
+        "Coimbra": [
+            "Leiria",
+            "Lisboa",
+            "Samtarem",
+            "Porto",
+            "Aveiro"
+        ]
+    },
+    "dest": "Lisboa",
+    "property": {
+        "name": "no-transit",
+        "params": {}
+    },
+    "info": {
+        "business_rel": {
+            "('Portalegre', 'Lisboa')": "cust_prov",
+            "('Lisboa', 'Portalegre')": "prov_cust",
+            "('Evora', 'Lisboa')": "cust_prov",
+            "('Lisboa', 'Evora')": "prov_cust",
+            "('Guarda', 'Porto')": "cust_prov",
+            "('Porto', 'Guarda')": "prov_cust",
+            "('Castelo Branco', 'Lisboa')": "cust_prov",
+            "('Lisboa', 'Castelo Branco')": "prov_cust",
+            "('Tomar', 'Lisboa')": "cust_prov",
+            "('Lisboa', 'Tomar')": "prov_cust",
+            "('Leiria', 'Coimbra')": "peer_peer",
+            "('Coimbra', 'Leiria')": "peer_peer",
+            "('Leiria', 'Lisboa')": "cust_prov",
+            "('Lisboa', 'Leiria')": "prov_cust",
+            "('Lisboa', 'Samtarem')": "prov_cust",
+            "('Samtarem', 'Lisboa')": "cust_prov",
+            "('Lisboa', 'Setubal')": "prov_cust",
+            "('Setubal', 'Lisboa')": "cust_prov",
+            "('Lisboa', 'Ponta Delgada')": "prov_cust",
+            "('Ponta Delgada', 'Lisboa')": "cust_prov",
+            "('Lisboa', 'Funchal')": "prov_cust",
+            "('Funchal', 'Lisboa')": "cust_prov",
+            "('Lisboa', 'Viseu')": "prov_cust",
+            "('Viseu', 'Lisboa')": "cust_prov",
+            "('Lisboa', 'Coimbra')": "prov_cust",
+            "('Coimbra', 'Lisboa')": "cust_prov",
+            "('Samtarem', 'Coimbra')": "peer_peer",
+            "('Coimbra', 'Samtarem')": "peer_peer",
+            "('Setubal', 'Beja')": "prov_cust",
+            "('Beja', 'Setubal')": "cust_prov",
+            "('Setubal', 'Faro')": "prov_cust",
+            "('Faro', 'Setubal')": "cust_prov",
+            "('Covilha', 'Porto')": "cust_prov",
+            "('Porto', 'Covilha')": "prov_cust",
+            "('Viana de Castelo', 'Porto')": "cust_prov",
+            "('Porto', 'Viana de Castelo')": "prov_cust",
+            "('Barcelos', 'Porto')": "cust_prov",
+            "('Porto', 'Barcelos')": "prov_cust",
+            "('Braga', 'Porto')": "cust_prov",
+            "('Porto', 'Braga')": "prov_cust",
+            "('Villa Real', 'Porto')": "cust_prov",
+            "('Porto', 'Villa Real')": "prov_cust",
+            "('Bragancia', 'Porto')": "cust_prov",
+            "('Porto', 'Bragancia')": "prov_cust",
+            "('Porto', 'Aveiro')": "prov_cust",
+            "('Aveiro', 'Porto')": "cust_prov",
+            "('Porto', 'Coimbra')": "cust_prov",
+            "('Coimbra', 'Porto')": "prov_cust",
+            "('Aveiro', 'Coimbra')": "cust_prov",
+            "('Coimbra', 'Aveiro')": "prov_cust"
+        }
+    },
+    "policy": {
+        "('Portalegre', 'Lisboa')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Evora', 'Lisboa')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Guarda', 'Porto')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Castelo Branco', 'Lisboa')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Tomar', 'Lisboa')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Leiria', 'Coimbra')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Leiria', 'Lisboa')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Lisboa', 'Portalegre')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Lisboa', 'Evora')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Lisboa', 'Castelo Branco')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Lisboa', 'Tomar')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Lisboa', 'Leiria')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Lisboa', 'Samtarem')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Lisboa', 'Setubal')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Lisboa', 'Ponta Delgada')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Lisboa', 'Funchal')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Lisboa', 'Viseu')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Lisboa', 'Coimbra')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Samtarem', 'Lisboa')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Samtarem', 'Coimbra')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Setubal', 'Lisboa')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Setubal', 'Beja')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Setubal', 'Faro')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Ponta Delgada', 'Lisboa')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Beja', 'Setubal')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Faro', 'Setubal')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Funchal', 'Lisboa')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Viseu', 'Lisboa')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Covilha', 'Porto')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Viana de Castelo', 'Porto')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Barcelos', 'Porto')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Braga', 'Porto')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Villa Real', 'Porto')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Bragancia', 'Porto')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Porto', 'Guarda')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Porto', 'Covilha')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Porto', 'Viana de Castelo')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Porto', 'Barcelos')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Porto', 'Braga')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Porto', 'Villa Real')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Porto', 'Bragancia')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Porto', 'Aveiro')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Porto', 'Coimbra')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Aveiro', 'Porto')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Aveiro', 'Coimbra')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Coimbra', 'Leiria')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Coimbra', 'Lisboa')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Coimbra', 'Samtarem')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Coimbra', 'Porto')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Coimbra', 'Aveiro')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ]
+    }
+}

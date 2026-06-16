@@ -1,0 +1,3 @@
+Node Count: 42
+Edge Count: 42
+Total Parse Time: 0.0050S

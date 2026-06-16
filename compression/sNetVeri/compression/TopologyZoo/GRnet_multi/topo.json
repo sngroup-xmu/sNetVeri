@@ -1,0 +1,4313 @@
+[
+    {
+        "NodeId": 1,
+        "deviceName": "Router1",
+        "deviceIp": [
+            "20.0.0.1",
+            "20.0.0.2",
+            "20.0.0.4"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "0.1",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.1",
+                "asNum": "65000",
+                "routerId": "20.0.0.1",
+                "interfaceList": [
+                    {
+                        "segment": "20.0.0.1/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.1",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.1",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.0/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.1",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.0",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.1",
+                        "remoteIp": "20.0.0.3",
+                        "remoteAsNumber": "65002",
+                        "localAsNumber": "65000",
+                        "localPeerIp": "60.0.0.0",
+                        "remotePeerIp": "60.0.0.1",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/2"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.0/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            },
+            {
+                "deviceIp": "20.0.0.2",
+                "asNum": "65001",
+                "routerId": "20.0.0.2",
+                "interfaceList": [
+                    {
+                        "segment": "20.0.0.2/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.2",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.2",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.2/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.2",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.2",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.2",
+                        "remoteIp": "20.0.0.3",
+                        "remoteAsNumber": "65002",
+                        "localAsNumber": "65001",
+                        "localPeerIp": "60.0.0.2",
+                        "remotePeerIp": "60.0.0.3",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/3"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.2/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            },
+            {
+                "deviceIp": "20.0.0.4",
+                "asNum": "65003",
+                "routerId": "20.0.0.4",
+                "interfaceList": [
+                    {
+                        "segment": "60.0.0.5/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.4",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.5",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "20.0.0.4/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.4",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.4",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.4",
+                        "remoteIp": "20.0.0.3",
+                        "remoteAsNumber": "65002",
+                        "localAsNumber": "65003",
+                        "localPeerIp": "60.0.0.5",
+                        "remotePeerIp": "60.0.0.4",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/4"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.4/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.1",
+                    "20.0.0.2",
+                    "20.0.0.4"
+                ],
+                "remoteIp": [
+                    "20.0.0.3"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 20
+            }
+        ]
+    },
+    {
+        "NodeId": 2,
+        "deviceName": "Router2",
+        "deviceIp": [
+            "20.0.0.8"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65007",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.8",
+                "asNum": "65007",
+                "routerId": "20.0.0.8",
+                "interfaceList": [
+                    {
+                        "segment": "60.0.0.19/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.8",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.19",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "20.0.0.8/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.8",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.8",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.8",
+                        "remoteIp": "20.0.0.7",
+                        "remoteAsNumber": "65006",
+                        "localAsNumber": "65007",
+                        "localPeerIp": "60.0.0.19",
+                        "remotePeerIp": "60.0.0.18",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/3"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.18/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.8"
+                ],
+                "remoteIp": [
+                    "20.0.0.7"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 14
+            }
+        ]
+    },
+    {
+        "NodeId": 3,
+        "deviceName": "Router3",
+        "deviceIp": [
+            "20.0.0.11",
+            "20.0.0.25"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "0.3",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.11",
+                "asNum": "65010",
+                "routerId": "20.0.0.11",
+                "interfaceList": [
+                    {
+                        "segment": "20.0.0.11/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.11",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.11",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.30/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.11",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.30",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.11",
+                        "remoteIp": "20.0.0.24",
+                        "remoteAsNumber": "65023",
+                        "localAsNumber": "65010",
+                        "localPeerIp": "60.0.0.30",
+                        "remotePeerIp": "60.0.0.31",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/2"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.30/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            },
+            {
+                "deviceIp": "20.0.0.25",
+                "asNum": "65024",
+                "routerId": "20.0.0.25",
+                "interfaceList": [
+                    {
+                        "segment": "60.0.0.63/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.25",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.63",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "20.0.0.25/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.25",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.25",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.25",
+                        "remoteIp": "20.0.0.24",
+                        "remoteAsNumber": "65023",
+                        "localAsNumber": "65024",
+                        "localPeerIp": "60.0.0.63",
+                        "remotePeerIp": "60.0.0.62",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/5"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.62/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.11",
+                    "20.0.0.25"
+                ],
+                "remoteIp": [
+                    "20.0.0.24"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 25
+            }
+        ]
+    },
+    {
+        "NodeId": 4,
+        "deviceName": "Router4",
+        "deviceIp": [
+            "20.0.0.12",
+            "20.0.0.13",
+            "20.0.0.19"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "0.4",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.12",
+                "asNum": "65011",
+                "routerId": "20.0.0.12",
+                "interfaceList": [
+                    {
+                        "segment": "20.0.0.12/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.12",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.12",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.32/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.12",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.32",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.12",
+                        "remoteIp": "20.0.0.20",
+                        "remoteAsNumber": "65019",
+                        "localAsNumber": "65011",
+                        "localPeerIp": "60.0.0.32",
+                        "remotePeerIp": "60.0.0.33",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/4"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.32/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            },
+            {
+                "deviceIp": "20.0.0.13",
+                "asNum": "65012",
+                "routerId": "20.0.0.13",
+                "interfaceList": [
+                    {
+                        "segment": "20.0.0.13/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.13",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.13",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.34/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.13",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.34",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.13",
+                        "remoteIp": "20.0.0.20",
+                        "remoteAsNumber": "65019",
+                        "localAsNumber": "65012",
+                        "localPeerIp": "60.0.0.34",
+                        "remotePeerIp": "60.0.0.35",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/5"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.34/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            },
+            {
+                "deviceIp": "20.0.0.19",
+                "asNum": "65018",
+                "routerId": "20.0.0.19",
+                "interfaceList": [
+                    {
+                        "segment": "20.0.0.19/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.19",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.19",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.50/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.19",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.50",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.19",
+                        "remoteIp": "20.0.0.20",
+                        "remoteAsNumber": "65019",
+                        "localAsNumber": "65018",
+                        "localPeerIp": "60.0.0.50",
+                        "remotePeerIp": "60.0.0.51",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/8"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.50/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.12",
+                    "20.0.0.13",
+                    "20.0.0.19"
+                ],
+                "remoteIp": [
+                    "20.0.0.20"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 31
+            }
+        ]
+    },
+    {
+        "NodeId": 5,
+        "deviceName": "Router5",
+        "deviceIp": [
+            "20.0.0.16"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65015",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.16",
+                "asNum": "65015",
+                "routerId": "20.0.0.16",
+                "interfaceList": [
+                    {
+                        "segment": "60.0.0.41/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.16",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.41",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "20.0.0.16/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.16",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.16",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.16",
+                        "remoteIp": "20.0.0.15",
+                        "remoteAsNumber": "65014",
+                        "localAsNumber": "65015",
+                        "localPeerIp": "60.0.0.41",
+                        "remotePeerIp": "60.0.0.40",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/4"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.40/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.16"
+                ],
+                "remoteIp": [
+                    "20.0.0.15"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 30
+            }
+        ]
+    },
+    {
+        "NodeId": 6,
+        "deviceName": "Router6",
+        "deviceIp": [
+            "20.0.0.17"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65016",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.17",
+                "asNum": "65016",
+                "routerId": "20.0.0.17",
+                "interfaceList": [
+                    {
+                        "segment": "20.0.0.17/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.17",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.17",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.46/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.17",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.46",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.17",
+                        "remoteIp": "20.0.0.18",
+                        "remoteAsNumber": "65017",
+                        "localAsNumber": "65016",
+                        "localPeerIp": "60.0.0.46",
+                        "remotePeerIp": "60.0.0.47",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/2"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.46/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.17"
+                ],
+                "remoteIp": [
+                    "20.0.0.18"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 15
+            }
+        ]
+    },
+    {
+        "NodeId": 7,
+        "deviceName": "Router7",
+        "deviceIp": [
+            "20.0.0.23"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65022",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.23",
+                "asNum": "65022",
+                "routerId": "20.0.0.23",
+                "interfaceList": [
+                    {
+                        "segment": "20.0.0.23/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.23",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.23",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.60/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.23",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.60",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.23",
+                        "remoteIp": "20.0.0.26",
+                        "remoteAsNumber": "65025",
+                        "localAsNumber": "65022",
+                        "localPeerIp": "60.0.0.60",
+                        "remotePeerIp": "60.0.0.61",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/3"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.60/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.23"
+                ],
+                "remoteIp": [
+                    "20.0.0.26"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 16
+            }
+        ]
+    },
+    {
+        "NodeId": 8,
+        "deviceName": "Router8",
+        "deviceIp": [
+            "20.0.0.27"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65026",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.27",
+                "asNum": "65026",
+                "routerId": "20.0.0.27",
+                "interfaceList": [
+                    {
+                        "segment": "60.0.0.11/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.27",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.11",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "20.0.0.27/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.27",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.27",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.27",
+                        "remoteIp": "20.0.0.5",
+                        "remoteAsNumber": "65004",
+                        "localAsNumber": "65026",
+                        "localPeerIp": "60.0.0.11",
+                        "remotePeerIp": "60.0.0.10",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/2"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.10/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.27"
+                ],
+                "remoteIp": [
+                    "20.0.0.5"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 13
+            }
+        ]
+    },
+    {
+        "NodeId": 9,
+        "deviceName": "Router9",
+        "deviceIp": [
+            "20.0.0.29"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65028",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.29",
+                "asNum": "65028",
+                "routerId": "20.0.0.29",
+                "interfaceList": [
+                    {
+                        "segment": "20.0.0.29/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.29",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.29",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.68/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.29",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.68",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.29",
+                        "remoteIp": "20.0.0.30",
+                        "remoteAsNumber": "65029",
+                        "localAsNumber": "65028",
+                        "localPeerIp": "60.0.0.68",
+                        "remotePeerIp": "60.0.0.69",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/5"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.68/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.29"
+                ],
+                "remoteIp": [
+                    "20.0.0.30"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 28
+            }
+        ]
+    },
+    {
+        "NodeId": 10,
+        "deviceName": "Router10",
+        "deviceIp": [
+            "20.0.0.32"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65031",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.32",
+                "asNum": "65031",
+                "routerId": "20.0.0.32",
+                "interfaceList": [
+                    {
+                        "segment": "60.0.0.75/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.32",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.75",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "20.0.0.32/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.32",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.32",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.32",
+                        "remoteIp": "20.0.0.31",
+                        "remoteAsNumber": "65030",
+                        "localAsNumber": "65031",
+                        "localPeerIp": "60.0.0.75",
+                        "remotePeerIp": "60.0.0.74",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/3"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.74/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.32"
+                ],
+                "remoteIp": [
+                    "20.0.0.31"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 17
+            }
+        ]
+    },
+    {
+        "NodeId": 11,
+        "deviceName": "Router11",
+        "deviceIp": [
+            "20.0.0.33"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65032",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.33",
+                "asNum": "65032",
+                "routerId": "20.0.0.33",
+                "interfaceList": [
+                    {
+                        "segment": "20.0.0.33/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.33",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.33",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.76/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.33",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.76",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.33",
+                        "remoteIp": "20.0.0.34",
+                        "remoteAsNumber": "65033",
+                        "localAsNumber": "65032",
+                        "localPeerIp": "60.0.0.76",
+                        "remotePeerIp": "60.0.0.77",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/4"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.76/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.33"
+                ],
+                "remoteIp": [
+                    "20.0.0.34"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 27
+            }
+        ]
+    },
+    {
+        "NodeId": 12,
+        "deviceName": "Router12",
+        "deviceIp": [
+            "20.0.0.36"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65035",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.36",
+                "asNum": "65035",
+                "routerId": "20.0.0.36",
+                "interfaceList": [
+                    {
+                        "segment": "60.0.0.81/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.36",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.81",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "20.0.0.36/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.36",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.36",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.36",
+                        "remoteIp": "20.0.0.35",
+                        "remoteAsNumber": "65034",
+                        "localAsNumber": "65035",
+                        "localPeerIp": "60.0.0.81",
+                        "remotePeerIp": "60.0.0.80",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/3"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.80/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.36"
+                ],
+                "remoteIp": [
+                    "20.0.0.35"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 18
+            }
+        ]
+    },
+    {
+        "NodeId": 13,
+        "deviceName": "Router13",
+        "deviceIp": [
+            "20.0.0.5"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65004",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.5",
+                "asNum": "65004",
+                "routerId": "20.0.0.5",
+                "interfaceList": [
+                    {
+                        "segment": "20.0.0.5/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.5",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.5",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.10/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.5",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.10",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.12/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.5",
+                        "interfaceName": "Gi0/3",
+                        "interfaceId": 3,
+                        "peerIp": "60.0.0.12",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.5",
+                        "remoteIp": "20.0.0.27",
+                        "remoteAsNumber": "65026",
+                        "localAsNumber": "65004",
+                        "localPeerIp": "60.0.0.10",
+                        "remotePeerIp": "60.0.0.11",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/2"
+                    },
+                    {
+                        "localIp": "20.0.0.5",
+                        "remoteIp": "20.0.0.6",
+                        "remoteAsNumber": "65005",
+                        "localAsNumber": "65004",
+                        "localPeerIp": "60.0.0.12",
+                        "remotePeerIp": "60.0.0.13",
+                        "localInterfaceName": "Gi0/3",
+                        "remoteInterfaceName": "Gi0/2"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.10/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.5"
+                ],
+                "remoteIp": [
+                    "20.0.0.27"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 8
+            },
+            {
+                "localIp": [
+                    "20.0.0.5"
+                ],
+                "remoteIp": [
+                    "20.0.0.6"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 19
+            }
+        ]
+    },
+    {
+        "NodeId": 14,
+        "deviceName": "Router14",
+        "deviceIp": [
+            "20.0.0.7"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65006",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.7",
+                "asNum": "65006",
+                "routerId": "20.0.0.7",
+                "interfaceList": [
+                    {
+                        "segment": "20.0.0.7/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.7",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.7",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.16/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.7",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.16",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.18/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.7",
+                        "interfaceName": "Gi0/3",
+                        "interfaceId": 3,
+                        "peerIp": "60.0.0.18",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.7",
+                        "remoteIp": "20.0.0.28",
+                        "remoteAsNumber": "65027",
+                        "localAsNumber": "65006",
+                        "localPeerIp": "60.0.0.16",
+                        "remotePeerIp": "60.0.0.17",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/2"
+                    },
+                    {
+                        "localIp": "20.0.0.7",
+                        "remoteIp": "20.0.0.8",
+                        "remoteAsNumber": "65007",
+                        "localAsNumber": "65006",
+                        "localPeerIp": "60.0.0.18",
+                        "remotePeerIp": "60.0.0.19",
+                        "localInterfaceName": "Gi0/3",
+                        "remoteInterfaceName": "Gi0/2"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.16/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.7"
+                ],
+                "remoteIp": [
+                    "20.0.0.28"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 26
+            },
+            {
+                "localIp": [
+                    "20.0.0.7"
+                ],
+                "remoteIp": [
+                    "20.0.0.8"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 2
+            }
+        ]
+    },
+    {
+        "NodeId": 15,
+        "deviceName": "Router15",
+        "deviceIp": [
+            "20.0.0.18"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65017",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.18",
+                "asNum": "65017",
+                "routerId": "20.0.0.18",
+                "interfaceList": [
+                    {
+                        "segment": "60.0.0.47/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.18",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.47",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "20.0.0.18/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.18",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.18",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.48/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.18",
+                        "interfaceName": "Gi0/3",
+                        "interfaceId": 3,
+                        "peerIp": "60.0.0.48",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.18",
+                        "remoteIp": "20.0.0.17",
+                        "remoteAsNumber": "65016",
+                        "localAsNumber": "65017",
+                        "localPeerIp": "60.0.0.47",
+                        "remotePeerIp": "60.0.0.46",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/2"
+                    },
+                    {
+                        "localIp": "20.0.0.18",
+                        "remoteIp": "20.0.0.24",
+                        "remoteAsNumber": "65023",
+                        "localAsNumber": "65017",
+                        "localPeerIp": "60.0.0.48",
+                        "remotePeerIp": "60.0.0.49",
+                        "localInterfaceName": "Gi0/3",
+                        "remoteInterfaceName": "Gi0/3"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.46/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.18"
+                ],
+                "remoteIp": [
+                    "20.0.0.17"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 6
+            },
+            {
+                "localIp": [
+                    "20.0.0.18"
+                ],
+                "remoteIp": [
+                    "20.0.0.24"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 25
+            }
+        ]
+    },
+    {
+        "NodeId": 16,
+        "deviceName": "Router16",
+        "deviceIp": [
+            "20.0.0.26"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65025",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.26",
+                "asNum": "65025",
+                "routerId": "20.0.0.26",
+                "interfaceList": [
+                    {
+                        "segment": "60.0.0.55/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.26",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.55",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.61/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.26",
+                        "interfaceName": "Gi0/3",
+                        "interfaceId": 3,
+                        "peerIp": "60.0.0.61",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "20.0.0.26/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.26",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.26",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.26",
+                        "remoteIp": "20.0.0.20",
+                        "remoteAsNumber": "65019",
+                        "localAsNumber": "65025",
+                        "localPeerIp": "60.0.0.55",
+                        "remotePeerIp": "60.0.0.54",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/10"
+                    },
+                    {
+                        "localIp": "20.0.0.26",
+                        "remoteIp": "20.0.0.23",
+                        "remoteAsNumber": "65022",
+                        "localAsNumber": "65025",
+                        "localPeerIp": "60.0.0.61",
+                        "remotePeerIp": "60.0.0.60",
+                        "localInterfaceName": "Gi0/3",
+                        "remoteInterfaceName": "Gi0/2"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.60/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.26"
+                ],
+                "remoteIp": [
+                    "20.0.0.20"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 31
+            },
+            {
+                "localIp": [
+                    "20.0.0.26"
+                ],
+                "remoteIp": [
+                    "20.0.0.23"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 7
+            }
+        ]
+    },
+    {
+        "NodeId": 17,
+        "deviceName": "Router17",
+        "deviceIp": [
+            "20.0.0.31"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65030",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.31",
+                "asNum": "65030",
+                "routerId": "20.0.0.31",
+                "interfaceList": [
+                    {
+                        "segment": "60.0.0.73/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.31",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.73",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "20.0.0.31/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.31",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.31",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.74/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.31",
+                        "interfaceName": "Gi0/3",
+                        "interfaceId": 3,
+                        "peerIp": "60.0.0.74",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.31",
+                        "remoteIp": "20.0.0.30",
+                        "remoteAsNumber": "65029",
+                        "localAsNumber": "65030",
+                        "localPeerIp": "60.0.0.73",
+                        "remotePeerIp": "60.0.0.72",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/7"
+                    },
+                    {
+                        "localIp": "20.0.0.31",
+                        "remoteIp": "20.0.0.32",
+                        "remoteAsNumber": "65031",
+                        "localAsNumber": "65030",
+                        "localPeerIp": "60.0.0.74",
+                        "remotePeerIp": "60.0.0.75",
+                        "localInterfaceName": "Gi0/3",
+                        "remoteInterfaceName": "Gi0/2"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.72/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.31"
+                ],
+                "remoteIp": [
+                    "20.0.0.30"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 28
+            },
+            {
+                "localIp": [
+                    "20.0.0.31"
+                ],
+                "remoteIp": [
+                    "20.0.0.32"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 10
+            }
+        ]
+    },
+    {
+        "NodeId": 18,
+        "deviceName": "Router18",
+        "deviceIp": [
+            "20.0.0.35"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65034",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.35",
+                "asNum": "65034",
+                "routerId": "20.0.0.35",
+                "interfaceList": [
+                    {
+                        "segment": "60.0.0.79/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.35",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.79",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "20.0.0.35/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.35",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.35",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.80/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.35",
+                        "interfaceName": "Gi0/3",
+                        "interfaceId": 3,
+                        "peerIp": "60.0.0.80",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.35",
+                        "remoteIp": "20.0.0.34",
+                        "remoteAsNumber": "65033",
+                        "localAsNumber": "65034",
+                        "localPeerIp": "60.0.0.79",
+                        "remotePeerIp": "60.0.0.78",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/5"
+                    },
+                    {
+                        "localIp": "20.0.0.35",
+                        "remoteIp": "20.0.0.36",
+                        "remoteAsNumber": "65035",
+                        "localAsNumber": "65034",
+                        "localPeerIp": "60.0.0.80",
+                        "remotePeerIp": "60.0.0.81",
+                        "localInterfaceName": "Gi0/3",
+                        "remoteInterfaceName": "Gi0/2"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.78/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.35"
+                ],
+                "remoteIp": [
+                    "20.0.0.34"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 27
+            },
+            {
+                "localIp": [
+                    "20.0.0.35"
+                ],
+                "remoteIp": [
+                    "20.0.0.36"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 12
+            }
+        ]
+    },
+    {
+        "NodeId": 19,
+        "deviceName": "Router19",
+        "deviceIp": [
+            "20.0.0.6"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65005",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.6",
+                "asNum": "65005",
+                "routerId": "20.0.0.6",
+                "interfaceList": [
+                    {
+                        "segment": "60.0.0.13/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.6",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.13",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "20.0.0.6/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.6",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.6",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.14/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.6",
+                        "interfaceName": "Gi0/3",
+                        "interfaceId": 3,
+                        "peerIp": "60.0.0.14",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.6",
+                        "remoteIp": "20.0.0.5",
+                        "remoteAsNumber": "65004",
+                        "localAsNumber": "65005",
+                        "localPeerIp": "60.0.0.13",
+                        "remotePeerIp": "60.0.0.12",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/3"
+                    },
+                    {
+                        "localIp": "20.0.0.6",
+                        "remoteIp": "20.0.0.9",
+                        "remoteAsNumber": "65008",
+                        "localAsNumber": "65005",
+                        "localPeerIp": "60.0.0.14",
+                        "remotePeerIp": "60.0.0.15",
+                        "localInterfaceName": "Gi0/3",
+                        "remoteInterfaceName": "Gi0/2"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.12/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.6"
+                ],
+                "remoteIp": [
+                    "20.0.0.5"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 13
+            },
+            {
+                "localIp": [
+                    "20.0.0.6"
+                ],
+                "remoteIp": [
+                    "20.0.0.9"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 29
+            }
+        ]
+    },
+    {
+        "NodeId": 20,
+        "deviceName": "Router20",
+        "deviceIp": [
+            "20.0.0.3"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65002",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.3",
+                "asNum": "65002",
+                "routerId": "20.0.0.3",
+                "interfaceList": [
+                    {
+                        "segment": "60.0.0.1/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.3",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.1",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.3/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.3",
+                        "interfaceName": "Gi0/3",
+                        "interfaceId": 3,
+                        "peerIp": "60.0.0.3",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "20.0.0.3/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.3",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.3",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.4/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.3",
+                        "interfaceName": "Gi0/4",
+                        "interfaceId": 4,
+                        "peerIp": "60.0.0.4",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.6/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.3",
+                        "interfaceName": "Gi0/5",
+                        "interfaceId": 5,
+                        "peerIp": "60.0.0.6",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.8/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.3",
+                        "interfaceName": "Gi0/6",
+                        "interfaceId": 6,
+                        "peerIp": "60.0.0.8",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.3",
+                        "remoteIp": "20.0.0.1",
+                        "remoteAsNumber": "65000",
+                        "localAsNumber": "65002",
+                        "localPeerIp": "60.0.0.1",
+                        "remotePeerIp": "60.0.0.0",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/2"
+                    },
+                    {
+                        "localIp": "20.0.0.3",
+                        "remoteIp": "20.0.0.2",
+                        "remoteAsNumber": "65001",
+                        "localAsNumber": "65002",
+                        "localPeerIp": "60.0.0.3",
+                        "remotePeerIp": "60.0.0.2",
+                        "localInterfaceName": "Gi0/3",
+                        "remoteInterfaceName": "Gi0/2"
+                    },
+                    {
+                        "localIp": "20.0.0.3",
+                        "remoteIp": "20.0.0.4",
+                        "remoteAsNumber": "65003",
+                        "localAsNumber": "65002",
+                        "localPeerIp": "60.0.0.4",
+                        "remotePeerIp": "60.0.0.5",
+                        "localInterfaceName": "Gi0/4",
+                        "remoteInterfaceName": "Gi0/2"
+                    },
+                    {
+                        "localIp": "20.0.0.3",
+                        "remoteIp": "20.0.0.20",
+                        "remoteAsNumber": "65019",
+                        "localAsNumber": "65002",
+                        "localPeerIp": "60.0.0.6",
+                        "remotePeerIp": "60.0.0.7",
+                        "localInterfaceName": "Gi0/5",
+                        "remoteInterfaceName": "Gi0/2"
+                    },
+                    {
+                        "localIp": "20.0.0.3",
+                        "remoteIp": "20.0.0.30",
+                        "remoteAsNumber": "65029",
+                        "localAsNumber": "65002",
+                        "localPeerIp": "60.0.0.8",
+                        "remotePeerIp": "60.0.0.9",
+                        "localInterfaceName": "Gi0/6",
+                        "remoteInterfaceName": "Gi0/2"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.2/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.3"
+                ],
+                "remoteIp": [
+                    "20.0.0.1",
+                    "20.0.0.2",
+                    "20.0.0.4"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 1
+            },
+            {
+                "localIp": [
+                    "20.0.0.3"
+                ],
+                "remoteIp": [
+                    "20.0.0.20"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 31
+            },
+            {
+                "localIp": [
+                    "20.0.0.3"
+                ],
+                "remoteIp": [
+                    "20.0.0.30"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 28
+            }
+        ]
+    },
+    {
+        "NodeId": 21,
+        "deviceName": "Router21",
+        "deviceIp": [
+            "20.0.0.10"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65009",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.10",
+                "asNum": "65009",
+                "routerId": "20.0.0.10",
+                "interfaceList": [
+                    {
+                        "segment": "60.0.0.21/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.10",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.21",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "20.0.0.10/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.10",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.10",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.28/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.10",
+                        "interfaceName": "Gi0/3",
+                        "interfaceId": 3,
+                        "peerIp": "60.0.0.28",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.10",
+                        "remoteIp": "20.0.0.9",
+                        "remoteAsNumber": "65008",
+                        "localAsNumber": "65009",
+                        "localPeerIp": "60.0.0.21",
+                        "remotePeerIp": "60.0.0.20",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/3"
+                    },
+                    {
+                        "localIp": "20.0.0.10",
+                        "remoteIp": "20.0.0.22",
+                        "remoteAsNumber": "65021",
+                        "localAsNumber": "65009",
+                        "localPeerIp": "60.0.0.28",
+                        "remotePeerIp": "60.0.0.29",
+                        "localInterfaceName": "Gi0/3",
+                        "remoteInterfaceName": "Gi0/2"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.20/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.10"
+                ],
+                "remoteIp": [
+                    "20.0.0.9"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 29
+            },
+            {
+                "localIp": [
+                    "20.0.0.10"
+                ],
+                "remoteIp": [
+                    "20.0.0.22"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 24
+            }
+        ]
+    },
+    {
+        "NodeId": 22,
+        "deviceName": "Router22",
+        "deviceIp": [
+            "20.0.0.14"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65013",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.14",
+                "asNum": "65013",
+                "routerId": "20.0.0.14",
+                "interfaceList": [
+                    {
+                        "segment": "20.0.0.14/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.14",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.14",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.36/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.14",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.36",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.38/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.14",
+                        "interfaceName": "Gi0/3",
+                        "interfaceId": 3,
+                        "peerIp": "60.0.0.38",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.14",
+                        "remoteIp": "20.0.0.20",
+                        "remoteAsNumber": "65019",
+                        "localAsNumber": "65013",
+                        "localPeerIp": "60.0.0.36",
+                        "remotePeerIp": "60.0.0.37",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/6"
+                    },
+                    {
+                        "localIp": "20.0.0.14",
+                        "remoteIp": "20.0.0.15",
+                        "remoteAsNumber": "65014",
+                        "localAsNumber": "65013",
+                        "localPeerIp": "60.0.0.38",
+                        "remotePeerIp": "60.0.0.39",
+                        "localInterfaceName": "Gi0/3",
+                        "remoteInterfaceName": "Gi0/3"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.36/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.14"
+                ],
+                "remoteIp": [
+                    "20.0.0.20"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 31
+            },
+            {
+                "localIp": [
+                    "20.0.0.14"
+                ],
+                "remoteIp": [
+                    "20.0.0.15"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 30
+            }
+        ]
+    },
+    {
+        "NodeId": 23,
+        "deviceName": "Router23",
+        "deviceIp": [
+            "20.0.0.21"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65020",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.21",
+                "asNum": "65020",
+                "routerId": "20.0.0.21",
+                "interfaceList": [
+                    {
+                        "segment": "60.0.0.45/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.21",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.45",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "20.0.0.21/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.21",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.21",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.58/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.21",
+                        "interfaceName": "Gi0/3",
+                        "interfaceId": 3,
+                        "peerIp": "60.0.0.58",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.21",
+                        "remoteIp": "20.0.0.15",
+                        "remoteAsNumber": "65014",
+                        "localAsNumber": "65020",
+                        "localPeerIp": "60.0.0.45",
+                        "remotePeerIp": "60.0.0.44",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/6"
+                    },
+                    {
+                        "localIp": "20.0.0.21",
+                        "remoteIp": "20.0.0.22",
+                        "remoteAsNumber": "65021",
+                        "localAsNumber": "65020",
+                        "localPeerIp": "60.0.0.58",
+                        "remotePeerIp": "60.0.0.59",
+                        "localInterfaceName": "Gi0/3",
+                        "remoteInterfaceName": "Gi0/3"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.44/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.21"
+                ],
+                "remoteIp": [
+                    "20.0.0.15"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 30
+            },
+            {
+                "localIp": [
+                    "20.0.0.21"
+                ],
+                "remoteIp": [
+                    "20.0.0.22"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 24
+            }
+        ]
+    },
+    {
+        "NodeId": 24,
+        "deviceName": "Router24",
+        "deviceIp": [
+            "20.0.0.22"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65021",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.22",
+                "asNum": "65021",
+                "routerId": "20.0.0.22",
+                "interfaceList": [
+                    {
+                        "segment": "60.0.0.29/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.22",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.29",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.59/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.22",
+                        "interfaceName": "Gi0/3",
+                        "interfaceId": 3,
+                        "peerIp": "60.0.0.59",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "20.0.0.22/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.22",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.22",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.22",
+                        "remoteIp": "20.0.0.10",
+                        "remoteAsNumber": "65009",
+                        "localAsNumber": "65021",
+                        "localPeerIp": "60.0.0.29",
+                        "remotePeerIp": "60.0.0.28",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/3"
+                    },
+                    {
+                        "localIp": "20.0.0.22",
+                        "remoteIp": "20.0.0.21",
+                        "remoteAsNumber": "65020",
+                        "localAsNumber": "65021",
+                        "localPeerIp": "60.0.0.59",
+                        "remotePeerIp": "60.0.0.58",
+                        "localInterfaceName": "Gi0/3",
+                        "remoteInterfaceName": "Gi0/3"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.58/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.22"
+                ],
+                "remoteIp": [
+                    "20.0.0.10"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 21
+            },
+            {
+                "localIp": [
+                    "20.0.0.22"
+                ],
+                "remoteIp": [
+                    "20.0.0.21"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 23
+            }
+        ]
+    },
+    {
+        "NodeId": 25,
+        "deviceName": "Router25",
+        "deviceIp": [
+            "20.0.0.24"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65023",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.24",
+                "asNum": "65023",
+                "routerId": "20.0.0.24",
+                "interfaceList": [
+                    {
+                        "segment": "60.0.0.31/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.24",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.31",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.49/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.24",
+                        "interfaceName": "Gi0/3",
+                        "interfaceId": 3,
+                        "peerIp": "60.0.0.49",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.53/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.24",
+                        "interfaceName": "Gi0/4",
+                        "interfaceId": 4,
+                        "peerIp": "60.0.0.53",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "20.0.0.24/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.24",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.24",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.62/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.24",
+                        "interfaceName": "Gi0/5",
+                        "interfaceId": 5,
+                        "peerIp": "60.0.0.62",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.64/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.24",
+                        "interfaceName": "Gi0/6",
+                        "interfaceId": 6,
+                        "peerIp": "60.0.0.64",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.24",
+                        "remoteIp": "20.0.0.11",
+                        "remoteAsNumber": "65010",
+                        "localAsNumber": "65023",
+                        "localPeerIp": "60.0.0.31",
+                        "remotePeerIp": "60.0.0.30",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/2"
+                    },
+                    {
+                        "localIp": "20.0.0.24",
+                        "remoteIp": "20.0.0.18",
+                        "remoteAsNumber": "65017",
+                        "localAsNumber": "65023",
+                        "localPeerIp": "60.0.0.49",
+                        "remotePeerIp": "60.0.0.48",
+                        "localInterfaceName": "Gi0/3",
+                        "remoteInterfaceName": "Gi0/3"
+                    },
+                    {
+                        "localIp": "20.0.0.24",
+                        "remoteIp": "20.0.0.20",
+                        "remoteAsNumber": "65019",
+                        "localAsNumber": "65023",
+                        "localPeerIp": "60.0.0.53",
+                        "remotePeerIp": "60.0.0.52",
+                        "localInterfaceName": "Gi0/4",
+                        "remoteInterfaceName": "Gi0/9"
+                    },
+                    {
+                        "localIp": "20.0.0.24",
+                        "remoteIp": "20.0.0.25",
+                        "remoteAsNumber": "65024",
+                        "localAsNumber": "65023",
+                        "localPeerIp": "60.0.0.62",
+                        "remotePeerIp": "60.0.0.63",
+                        "localInterfaceName": "Gi0/5",
+                        "remoteInterfaceName": "Gi0/2"
+                    },
+                    {
+                        "localIp": "20.0.0.24",
+                        "remoteIp": "20.0.0.28",
+                        "remoteAsNumber": "65027",
+                        "localAsNumber": "65023",
+                        "localPeerIp": "60.0.0.64",
+                        "remotePeerIp": "60.0.0.65",
+                        "localInterfaceName": "Gi0/6",
+                        "remoteInterfaceName": "Gi0/3"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.48/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.24"
+                ],
+                "remoteIp": [
+                    "20.0.0.11",
+                    "20.0.0.25"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 3
+            },
+            {
+                "localIp": [
+                    "20.0.0.24"
+                ],
+                "remoteIp": [
+                    "20.0.0.18"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 15
+            },
+            {
+                "localIp": [
+                    "20.0.0.24"
+                ],
+                "remoteIp": [
+                    "20.0.0.20"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 31
+            },
+            {
+                "localIp": [
+                    "20.0.0.24"
+                ],
+                "remoteIp": [
+                    "20.0.0.28"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 26
+            }
+        ]
+    },
+    {
+        "NodeId": 26,
+        "deviceName": "Router26",
+        "deviceIp": [
+            "20.0.0.28"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65027",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.28",
+                "asNum": "65027",
+                "routerId": "20.0.0.28",
+                "interfaceList": [
+                    {
+                        "segment": "60.0.0.17/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.28",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.17",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.65/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.28",
+                        "interfaceName": "Gi0/3",
+                        "interfaceId": 3,
+                        "peerIp": "60.0.0.65",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "20.0.0.28/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.28",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.28",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.66/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.28",
+                        "interfaceName": "Gi0/4",
+                        "interfaceId": 4,
+                        "peerIp": "60.0.0.66",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.28",
+                        "remoteIp": "20.0.0.7",
+                        "remoteAsNumber": "65006",
+                        "localAsNumber": "65027",
+                        "localPeerIp": "60.0.0.17",
+                        "remotePeerIp": "60.0.0.16",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/2"
+                    },
+                    {
+                        "localIp": "20.0.0.28",
+                        "remoteIp": "20.0.0.24",
+                        "remoteAsNumber": "65023",
+                        "localAsNumber": "65027",
+                        "localPeerIp": "60.0.0.65",
+                        "remotePeerIp": "60.0.0.64",
+                        "localInterfaceName": "Gi0/3",
+                        "remoteInterfaceName": "Gi0/6"
+                    },
+                    {
+                        "localIp": "20.0.0.28",
+                        "remoteIp": "20.0.0.30",
+                        "remoteAsNumber": "65029",
+                        "localAsNumber": "65027",
+                        "localPeerIp": "60.0.0.66",
+                        "remotePeerIp": "60.0.0.67",
+                        "localInterfaceName": "Gi0/4",
+                        "remoteInterfaceName": "Gi0/4"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.64/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.28"
+                ],
+                "remoteIp": [
+                    "20.0.0.7"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 14
+            },
+            {
+                "localIp": [
+                    "20.0.0.28"
+                ],
+                "remoteIp": [
+                    "20.0.0.24"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 25
+            },
+            {
+                "localIp": [
+                    "20.0.0.28"
+                ],
+                "remoteIp": [
+                    "20.0.0.30"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 28
+            }
+        ]
+    },
+    {
+        "NodeId": 27,
+        "deviceName": "Router27",
+        "deviceIp": [
+            "20.0.0.34"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65033",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.34",
+                "asNum": "65033",
+                "routerId": "20.0.0.34",
+                "interfaceList": [
+                    {
+                        "segment": "60.0.0.23/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.34",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.23",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.71/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.34",
+                        "interfaceName": "Gi0/3",
+                        "interfaceId": 3,
+                        "peerIp": "60.0.0.71",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.77/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.34",
+                        "interfaceName": "Gi0/4",
+                        "interfaceId": 4,
+                        "peerIp": "60.0.0.77",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "20.0.0.34/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.34",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.34",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.78/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.34",
+                        "interfaceName": "Gi0/5",
+                        "interfaceId": 5,
+                        "peerIp": "60.0.0.78",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.34",
+                        "remoteIp": "20.0.0.9",
+                        "remoteAsNumber": "65008",
+                        "localAsNumber": "65033",
+                        "localPeerIp": "60.0.0.23",
+                        "remotePeerIp": "60.0.0.22",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/4"
+                    },
+                    {
+                        "localIp": "20.0.0.34",
+                        "remoteIp": "20.0.0.30",
+                        "remoteAsNumber": "65029",
+                        "localAsNumber": "65033",
+                        "localPeerIp": "60.0.0.71",
+                        "remotePeerIp": "60.0.0.70",
+                        "localInterfaceName": "Gi0/3",
+                        "remoteInterfaceName": "Gi0/6"
+                    },
+                    {
+                        "localIp": "20.0.0.34",
+                        "remoteIp": "20.0.0.33",
+                        "remoteAsNumber": "65032",
+                        "localAsNumber": "65033",
+                        "localPeerIp": "60.0.0.77",
+                        "remotePeerIp": "60.0.0.76",
+                        "localInterfaceName": "Gi0/4",
+                        "remoteInterfaceName": "Gi0/2"
+                    },
+                    {
+                        "localIp": "20.0.0.34",
+                        "remoteIp": "20.0.0.35",
+                        "remoteAsNumber": "65034",
+                        "localAsNumber": "65033",
+                        "localPeerIp": "60.0.0.78",
+                        "remotePeerIp": "60.0.0.79",
+                        "localInterfaceName": "Gi0/5",
+                        "remoteInterfaceName": "Gi0/2"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.70/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.34"
+                ],
+                "remoteIp": [
+                    "20.0.0.9"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 29
+            },
+            {
+                "localIp": [
+                    "20.0.0.34"
+                ],
+                "remoteIp": [
+                    "20.0.0.30"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 28
+            },
+            {
+                "localIp": [
+                    "20.0.0.34"
+                ],
+                "remoteIp": [
+                    "20.0.0.33"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 11
+            },
+            {
+                "localIp": [
+                    "20.0.0.34"
+                ],
+                "remoteIp": [
+                    "20.0.0.35"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 18
+            }
+        ]
+    },
+    {
+        "NodeId": 28,
+        "deviceName": "Router28",
+        "deviceIp": [
+            "20.0.0.30"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65029",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.30",
+                "asNum": "65029",
+                "routerId": "20.0.0.30",
+                "interfaceList": [
+                    {
+                        "segment": "60.0.0.9/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.30",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.9",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.57/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.30",
+                        "interfaceName": "Gi0/3",
+                        "interfaceId": 3,
+                        "peerIp": "60.0.0.57",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.67/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.30",
+                        "interfaceName": "Gi0/4",
+                        "interfaceId": 4,
+                        "peerIp": "60.0.0.67",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.69/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.30",
+                        "interfaceName": "Gi0/5",
+                        "interfaceId": 5,
+                        "peerIp": "60.0.0.69",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "20.0.0.30/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.30",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.30",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.70/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.30",
+                        "interfaceName": "Gi0/6",
+                        "interfaceId": 6,
+                        "peerIp": "60.0.0.70",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.72/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.30",
+                        "interfaceName": "Gi0/7",
+                        "interfaceId": 7,
+                        "peerIp": "60.0.0.72",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.30",
+                        "remoteIp": "20.0.0.3",
+                        "remoteAsNumber": "65002",
+                        "localAsNumber": "65029",
+                        "localPeerIp": "60.0.0.9",
+                        "remotePeerIp": "60.0.0.8",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/6"
+                    },
+                    {
+                        "localIp": "20.0.0.30",
+                        "remoteIp": "20.0.0.20",
+                        "remoteAsNumber": "65019",
+                        "localAsNumber": "65029",
+                        "localPeerIp": "60.0.0.57",
+                        "remotePeerIp": "60.0.0.56",
+                        "localInterfaceName": "Gi0/3",
+                        "remoteInterfaceName": "Gi0/11"
+                    },
+                    {
+                        "localIp": "20.0.0.30",
+                        "remoteIp": "20.0.0.28",
+                        "remoteAsNumber": "65027",
+                        "localAsNumber": "65029",
+                        "localPeerIp": "60.0.0.67",
+                        "remotePeerIp": "60.0.0.66",
+                        "localInterfaceName": "Gi0/4",
+                        "remoteInterfaceName": "Gi0/4"
+                    },
+                    {
+                        "localIp": "20.0.0.30",
+                        "remoteIp": "20.0.0.29",
+                        "remoteAsNumber": "65028",
+                        "localAsNumber": "65029",
+                        "localPeerIp": "60.0.0.69",
+                        "remotePeerIp": "60.0.0.68",
+                        "localInterfaceName": "Gi0/5",
+                        "remoteInterfaceName": "Gi0/2"
+                    },
+                    {
+                        "localIp": "20.0.0.30",
+                        "remoteIp": "20.0.0.34",
+                        "remoteAsNumber": "65033",
+                        "localAsNumber": "65029",
+                        "localPeerIp": "60.0.0.70",
+                        "remotePeerIp": "60.0.0.71",
+                        "localInterfaceName": "Gi0/6",
+                        "remoteInterfaceName": "Gi0/3"
+                    },
+                    {
+                        "localIp": "20.0.0.30",
+                        "remoteIp": "20.0.0.31",
+                        "remoteAsNumber": "65030",
+                        "localAsNumber": "65029",
+                        "localPeerIp": "60.0.0.72",
+                        "remotePeerIp": "60.0.0.73",
+                        "localInterfaceName": "Gi0/7",
+                        "remoteInterfaceName": "Gi0/2"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.56/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.30"
+                ],
+                "remoteIp": [
+                    "20.0.0.3"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 20
+            },
+            {
+                "localIp": [
+                    "20.0.0.30"
+                ],
+                "remoteIp": [
+                    "20.0.0.20"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 31
+            },
+            {
+                "localIp": [
+                    "20.0.0.30"
+                ],
+                "remoteIp": [
+                    "20.0.0.28"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 26
+            },
+            {
+                "localIp": [
+                    "20.0.0.30"
+                ],
+                "remoteIp": [
+                    "20.0.0.29"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 9
+            },
+            {
+                "localIp": [
+                    "20.0.0.30"
+                ],
+                "remoteIp": [
+                    "20.0.0.34"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 27
+            },
+            {
+                "localIp": [
+                    "20.0.0.30"
+                ],
+                "remoteIp": [
+                    "20.0.0.31"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 17
+            }
+        ]
+    },
+    {
+        "NodeId": 29,
+        "deviceName": "Router29",
+        "deviceIp": [
+            "20.0.0.9"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65008",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.9",
+                "asNum": "65008",
+                "routerId": "20.0.0.9",
+                "interfaceList": [
+                    {
+                        "segment": "60.0.0.15/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.9",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.15",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "20.0.0.9/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.9",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.9",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.20/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.9",
+                        "interfaceName": "Gi0/3",
+                        "interfaceId": 3,
+                        "peerIp": "60.0.0.20",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.22/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.9",
+                        "interfaceName": "Gi0/4",
+                        "interfaceId": 4,
+                        "peerIp": "60.0.0.22",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.24/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.9",
+                        "interfaceName": "Gi0/5",
+                        "interfaceId": 5,
+                        "peerIp": "60.0.0.24",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.26/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.9",
+                        "interfaceName": "Gi0/6",
+                        "interfaceId": 6,
+                        "peerIp": "60.0.0.26",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.9",
+                        "remoteIp": "20.0.0.6",
+                        "remoteAsNumber": "65005",
+                        "localAsNumber": "65008",
+                        "localPeerIp": "60.0.0.15",
+                        "remotePeerIp": "60.0.0.14",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/3"
+                    },
+                    {
+                        "localIp": "20.0.0.9",
+                        "remoteIp": "20.0.0.10",
+                        "remoteAsNumber": "65009",
+                        "localAsNumber": "65008",
+                        "localPeerIp": "60.0.0.20",
+                        "remotePeerIp": "60.0.0.21",
+                        "localInterfaceName": "Gi0/3",
+                        "remoteInterfaceName": "Gi0/2"
+                    },
+                    {
+                        "localIp": "20.0.0.9",
+                        "remoteIp": "20.0.0.34",
+                        "remoteAsNumber": "65033",
+                        "localAsNumber": "65008",
+                        "localPeerIp": "60.0.0.22",
+                        "remotePeerIp": "60.0.0.23",
+                        "localInterfaceName": "Gi0/4",
+                        "remoteInterfaceName": "Gi0/2"
+                    },
+                    {
+                        "localIp": "20.0.0.9",
+                        "remoteIp": "20.0.0.20",
+                        "remoteAsNumber": "65019",
+                        "localAsNumber": "65008",
+                        "localPeerIp": "60.0.0.24",
+                        "remotePeerIp": "60.0.0.25",
+                        "localInterfaceName": "Gi0/5",
+                        "remoteInterfaceName": "Gi0/3"
+                    },
+                    {
+                        "localIp": "20.0.0.9",
+                        "remoteIp": "20.0.0.15",
+                        "remoteAsNumber": "65014",
+                        "localAsNumber": "65008",
+                        "localPeerIp": "60.0.0.26",
+                        "remotePeerIp": "60.0.0.27",
+                        "localInterfaceName": "Gi0/6",
+                        "remoteInterfaceName": "Gi0/2"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.14/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.9"
+                ],
+                "remoteIp": [
+                    "20.0.0.6"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 19
+            },
+            {
+                "localIp": [
+                    "20.0.0.9"
+                ],
+                "remoteIp": [
+                    "20.0.0.10"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 21
+            },
+            {
+                "localIp": [
+                    "20.0.0.9"
+                ],
+                "remoteIp": [
+                    "20.0.0.34"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 27
+            },
+            {
+                "localIp": [
+                    "20.0.0.9"
+                ],
+                "remoteIp": [
+                    "20.0.0.20"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 31
+            },
+            {
+                "localIp": [
+                    "20.0.0.9"
+                ],
+                "remoteIp": [
+                    "20.0.0.15"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 30
+            }
+        ]
+    },
+    {
+        "NodeId": 30,
+        "deviceName": "Router30",
+        "deviceIp": [
+            "20.0.0.15"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65014",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.15",
+                "asNum": "65014",
+                "routerId": "20.0.0.15",
+                "interfaceList": [
+                    {
+                        "segment": "60.0.0.27/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.15",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.27",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.39/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.15",
+                        "interfaceName": "Gi0/3",
+                        "interfaceId": 3,
+                        "peerIp": "60.0.0.39",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "20.0.0.15/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.15",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.15",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.40/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.15",
+                        "interfaceName": "Gi0/4",
+                        "interfaceId": 4,
+                        "peerIp": "60.0.0.40",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.42/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.15",
+                        "interfaceName": "Gi0/5",
+                        "interfaceId": 5,
+                        "peerIp": "60.0.0.42",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.44/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.15",
+                        "interfaceName": "Gi0/6",
+                        "interfaceId": 6,
+                        "peerIp": "60.0.0.44",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.15",
+                        "remoteIp": "20.0.0.9",
+                        "remoteAsNumber": "65008",
+                        "localAsNumber": "65014",
+                        "localPeerIp": "60.0.0.27",
+                        "remotePeerIp": "60.0.0.26",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/6"
+                    },
+                    {
+                        "localIp": "20.0.0.15",
+                        "remoteIp": "20.0.0.14",
+                        "remoteAsNumber": "65013",
+                        "localAsNumber": "65014",
+                        "localPeerIp": "60.0.0.39",
+                        "remotePeerIp": "60.0.0.38",
+                        "localInterfaceName": "Gi0/3",
+                        "remoteInterfaceName": "Gi0/3"
+                    },
+                    {
+                        "localIp": "20.0.0.15",
+                        "remoteIp": "20.0.0.16",
+                        "remoteAsNumber": "65015",
+                        "localAsNumber": "65014",
+                        "localPeerIp": "60.0.0.40",
+                        "remotePeerIp": "60.0.0.41",
+                        "localInterfaceName": "Gi0/4",
+                        "remoteInterfaceName": "Gi0/2"
+                    },
+                    {
+                        "localIp": "20.0.0.15",
+                        "remoteIp": "20.0.0.20",
+                        "remoteAsNumber": "65019",
+                        "localAsNumber": "65014",
+                        "localPeerIp": "60.0.0.42",
+                        "remotePeerIp": "60.0.0.43",
+                        "localInterfaceName": "Gi0/5",
+                        "remoteInterfaceName": "Gi0/7"
+                    },
+                    {
+                        "localIp": "20.0.0.15",
+                        "remoteIp": "20.0.0.21",
+                        "remoteAsNumber": "65020",
+                        "localAsNumber": "65014",
+                        "localPeerIp": "60.0.0.44",
+                        "remotePeerIp": "60.0.0.45",
+                        "localInterfaceName": "Gi0/6",
+                        "remoteInterfaceName": "Gi0/2"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.38/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.15"
+                ],
+                "remoteIp": [
+                    "20.0.0.9"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 29
+            },
+            {
+                "localIp": [
+                    "20.0.0.15"
+                ],
+                "remoteIp": [
+                    "20.0.0.14"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 22
+            },
+            {
+                "localIp": [
+                    "20.0.0.15"
+                ],
+                "remoteIp": [
+                    "20.0.0.16"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 5
+            },
+            {
+                "localIp": [
+                    "20.0.0.15"
+                ],
+                "remoteIp": [
+                    "20.0.0.20"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 31
+            },
+            {
+                "localIp": [
+                    "20.0.0.15"
+                ],
+                "remoteIp": [
+                    "20.0.0.21"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 23
+            }
+        ]
+    },
+    {
+        "NodeId": 31,
+        "deviceName": "Router31",
+        "deviceIp": [
+            "20.0.0.20"
+        ],
+        "deviceRole": "Router",
+        "region": "region",
+        "logiArea": "area",
+        "deviceGroup": "group",
+        "asNum": "65019",
+        "physicalNodeList": [
+            {
+                "deviceIp": "20.0.0.20",
+                "asNum": "65019",
+                "routerId": "20.0.0.20",
+                "interfaceList": [
+                    {
+                        "segment": "60.0.0.7/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.20",
+                        "interfaceName": "Gi0/2",
+                        "interfaceId": 2,
+                        "peerIp": "60.0.0.7",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.25/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.20",
+                        "interfaceName": "Gi0/3",
+                        "interfaceId": 3,
+                        "peerIp": "60.0.0.25",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.33/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.20",
+                        "interfaceName": "Gi0/4",
+                        "interfaceId": 4,
+                        "peerIp": "60.0.0.33",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.35/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.20",
+                        "interfaceName": "Gi0/5",
+                        "interfaceId": 5,
+                        "peerIp": "60.0.0.35",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.37/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.20",
+                        "interfaceName": "Gi0/6",
+                        "interfaceId": 6,
+                        "peerIp": "60.0.0.37",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.43/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.20",
+                        "interfaceName": "Gi0/7",
+                        "interfaceId": 7,
+                        "peerIp": "60.0.0.43",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.51/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.20",
+                        "interfaceName": "Gi0/8",
+                        "interfaceId": 8,
+                        "peerIp": "60.0.0.51",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "20.0.0.20/32",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.20",
+                        "interfaceName": "Loopback0",
+                        "interfaceId": 1,
+                        "peerIp": "20.0.0.20",
+                        "mask": "32",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.52/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.20",
+                        "interfaceName": "Gi0/9",
+                        "interfaceId": 9,
+                        "peerIp": "60.0.0.52",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.54/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.20",
+                        "interfaceName": "Gi0/10",
+                        "interfaceId": 10,
+                        "peerIp": "60.0.0.54",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    },
+                    {
+                        "segment": "60.0.0.56/31",
+                        "nextHop": "null",
+                        "deviceIp": "20.0.0.20",
+                        "interfaceName": "Gi0/11",
+                        "interfaceId": 11,
+                        "peerIp": "60.0.0.56",
+                        "mask": "31",
+                        "type": "PHYSICAL"
+                    }
+                ],
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.20",
+                        "remoteIp": "20.0.0.3",
+                        "remoteAsNumber": "65002",
+                        "localAsNumber": "65019",
+                        "localPeerIp": "60.0.0.7",
+                        "remotePeerIp": "60.0.0.6",
+                        "localInterfaceName": "Gi0/2",
+                        "remoteInterfaceName": "Gi0/5"
+                    },
+                    {
+                        "localIp": "20.0.0.20",
+                        "remoteIp": "20.0.0.9",
+                        "remoteAsNumber": "65008",
+                        "localAsNumber": "65019",
+                        "localPeerIp": "60.0.0.25",
+                        "remotePeerIp": "60.0.0.24",
+                        "localInterfaceName": "Gi0/3",
+                        "remoteInterfaceName": "Gi0/5"
+                    },
+                    {
+                        "localIp": "20.0.0.20",
+                        "remoteIp": "20.0.0.12",
+                        "remoteAsNumber": "65011",
+                        "localAsNumber": "65019",
+                        "localPeerIp": "60.0.0.33",
+                        "remotePeerIp": "60.0.0.32",
+                        "localInterfaceName": "Gi0/4",
+                        "remoteInterfaceName": "Gi0/2"
+                    },
+                    {
+                        "localIp": "20.0.0.20",
+                        "remoteIp": "20.0.0.13",
+                        "remoteAsNumber": "65012",
+                        "localAsNumber": "65019",
+                        "localPeerIp": "60.0.0.35",
+                        "remotePeerIp": "60.0.0.34",
+                        "localInterfaceName": "Gi0/5",
+                        "remoteInterfaceName": "Gi0/2"
+                    },
+                    {
+                        "localIp": "20.0.0.20",
+                        "remoteIp": "20.0.0.14",
+                        "remoteAsNumber": "65013",
+                        "localAsNumber": "65019",
+                        "localPeerIp": "60.0.0.37",
+                        "remotePeerIp": "60.0.0.36",
+                        "localInterfaceName": "Gi0/6",
+                        "remoteInterfaceName": "Gi0/2"
+                    },
+                    {
+                        "localIp": "20.0.0.20",
+                        "remoteIp": "20.0.0.15",
+                        "remoteAsNumber": "65014",
+                        "localAsNumber": "65019",
+                        "localPeerIp": "60.0.0.43",
+                        "remotePeerIp": "60.0.0.42",
+                        "localInterfaceName": "Gi0/7",
+                        "remoteInterfaceName": "Gi0/5"
+                    },
+                    {
+                        "localIp": "20.0.0.20",
+                        "remoteIp": "20.0.0.19",
+                        "remoteAsNumber": "65018",
+                        "localAsNumber": "65019",
+                        "localPeerIp": "60.0.0.51",
+                        "remotePeerIp": "60.0.0.50",
+                        "localInterfaceName": "Gi0/8",
+                        "remoteInterfaceName": "Gi0/2"
+                    },
+                    {
+                        "localIp": "20.0.0.20",
+                        "remoteIp": "20.0.0.24",
+                        "remoteAsNumber": "65023",
+                        "localAsNumber": "65019",
+                        "localPeerIp": "60.0.0.52",
+                        "remotePeerIp": "60.0.0.53",
+                        "localInterfaceName": "Gi0/9",
+                        "remoteInterfaceName": "Gi0/4"
+                    },
+                    {
+                        "localIp": "20.0.0.20",
+                        "remoteIp": "20.0.0.26",
+                        "remoteAsNumber": "65025",
+                        "localAsNumber": "65019",
+                        "localPeerIp": "60.0.0.54",
+                        "remotePeerIp": "60.0.0.55",
+                        "localInterfaceName": "Gi0/10",
+                        "remoteInterfaceName": "Gi0/2"
+                    },
+                    {
+                        "localIp": "20.0.0.20",
+                        "remoteIp": "20.0.0.30",
+                        "remoteAsNumber": "65029",
+                        "localAsNumber": "65019",
+                        "localPeerIp": "60.0.0.56",
+                        "remotePeerIp": "60.0.0.57",
+                        "localInterfaceName": "Gi0/11",
+                        "remoteInterfaceName": "Gi0/3"
+                    }
+                ],
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "NetworkRouteDto": [
+                    {
+                        "segment": "60.0.0.24/31",
+                        "NetworkPolicyName": "null",
+                        "id": 0
+                    }
+                ],
+                "ImportRouteDto": [],
+                "AggregateRouteDto": []
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": [
+                    "20.0.0.20"
+                ],
+                "remoteIp": [
+                    "20.0.0.3"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 20
+            },
+            {
+                "localIp": [
+                    "20.0.0.20"
+                ],
+                "remoteIp": [
+                    "20.0.0.9"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 29
+            },
+            {
+                "localIp": [
+                    "20.0.0.20"
+                ],
+                "remoteIp": [
+                    "20.0.0.12",
+                    "20.0.0.13",
+                    "20.0.0.19"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 4
+            },
+            {
+                "localIp": [
+                    "20.0.0.20"
+                ],
+                "remoteIp": [
+                    "20.0.0.14"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 22
+            },
+            {
+                "localIp": [
+                    "20.0.0.20"
+                ],
+                "remoteIp": [
+                    "20.0.0.15"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 30
+            },
+            {
+                "localIp": [
+                    "20.0.0.20"
+                ],
+                "remoteIp": [
+                    "20.0.0.24"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 25
+            },
+            {
+                "localIp": [
+                    "20.0.0.20"
+                ],
+                "remoteIp": [
+                    "20.0.0.26"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 16
+            },
+            {
+                "localIp": [
+                    "20.0.0.20"
+                ],
+                "remoteIp": [
+                    "20.0.0.30"
+                ],
+                "localExportPolicyId": 0,
+                "localImportPolicyId": 0,
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyId": 0,
+                "remoteNodeId": 28
+            }
+        ]
+    }
+]

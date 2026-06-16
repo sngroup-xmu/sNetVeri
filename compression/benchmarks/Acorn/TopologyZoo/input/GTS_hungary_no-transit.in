@@ -1,0 +1,1945 @@
+{
+    "description": "Topology Zoo network GTS_hungary, with policy based on Gao-Rexford conditions.",
+    "nodes": [
+        "Miskolc",
+        "Salgotarjan",
+        "Godollo",
+        "Szolnok",
+        "Dunaujvaros",
+        "Nyiregyhaza",
+        "Debrecen",
+        "Kecskemet",
+        "Baja",
+        "Pecs",
+        "Szeged",
+        "Siofok",
+        "Kaposvar",
+        "Szekszard",
+        "Vienna",
+        "Bratislava",
+        "Bekescsaba",
+        "Budapest",
+        "Vac",
+        "Sopron",
+        "Szombathely",
+        "Zalaegerszeg",
+        "Nagykanizsa",
+        "Szekesfehervar",
+        "Veszprem",
+        "Gyor",
+        "Tatabanya"
+    ],
+    "adjacency_list": {
+        "Miskolc": [
+            "Budapest"
+        ],
+        "Salgotarjan": [
+            "Budapest"
+        ],
+        "Godollo": [
+            "Budapest"
+        ],
+        "Szolnok": [
+            "Budapest",
+            "Debrecen"
+        ],
+        "Dunaujvaros": [
+            "Kecskemet",
+            "Budapest"
+        ],
+        "Nyiregyhaza": [
+            "Budapest"
+        ],
+        "Debrecen": [
+            "Szolnok",
+            "Szeged"
+        ],
+        "Kecskemet": [
+            "Dunaujvaros",
+            "Szeged"
+        ],
+        "Baja": [
+            "Budapest"
+        ],
+        "Pecs": [
+            "Budapest"
+        ],
+        "Szeged": [
+            "Debrecen",
+            "Kecskemet",
+            "Bekescsaba"
+        ],
+        "Siofok": [
+            "Budapest"
+        ],
+        "Kaposvar": [
+            "Budapest"
+        ],
+        "Szekszard": [
+            "Budapest"
+        ],
+        "Vienna": [
+            "Sopron"
+        ],
+        "Bratislava": [
+            "Gyor"
+        ],
+        "Bekescsaba": [
+            "Szeged"
+        ],
+        "Budapest": [
+            "Miskolc",
+            "Salgotarjan",
+            "Godollo",
+            "Szolnok",
+            "Dunaujvaros",
+            "Nyiregyhaza",
+            "Baja",
+            "Pecs",
+            "Siofok",
+            "Kaposvar",
+            "Szekszard",
+            "Vac",
+            "Nagykanizsa",
+            "Szekesfehervar",
+            "Tatabanya"
+        ],
+        "Vac": [
+            "Budapest"
+        ],
+        "Sopron": [
+            "Vienna",
+            "Gyor",
+            "Szombathely"
+        ],
+        "Szombathely": [
+            "Sopron",
+            "Zalaegerszeg"
+        ],
+        "Zalaegerszeg": [
+            "Szombathely",
+            "Veszprem"
+        ],
+        "Nagykanizsa": [
+            "Budapest"
+        ],
+        "Szekesfehervar": [
+            "Budapest",
+            "Veszprem"
+        ],
+        "Veszprem": [
+            "Zalaegerszeg",
+            "Szekesfehervar"
+        ],
+        "Gyor": [
+            "Bratislava",
+            "Sopron",
+            "Tatabanya"
+        ],
+        "Tatabanya": [
+            "Budapest",
+            "Gyor"
+        ]
+    },
+    "dest": "Budapest",
+    "property": {
+        "name": "no-transit",
+        "params": {}
+    },
+    "info": {
+        "business_rel": {
+            "('Miskolc', 'Budapest')": "cust_prov",
+            "('Budapest', 'Miskolc')": "prov_cust",
+            "('Salgotarjan', 'Budapest')": "cust_prov",
+            "('Budapest', 'Salgotarjan')": "prov_cust",
+            "('Godollo', 'Budapest')": "cust_prov",
+            "('Budapest', 'Godollo')": "prov_cust",
+            "('Szolnok', 'Budapest')": "cust_prov",
+            "('Budapest', 'Szolnok')": "prov_cust",
+            "('Szolnok', 'Debrecen')": "prov_cust",
+            "('Debrecen', 'Szolnok')": "cust_prov",
+            "('Dunaujvaros', 'Kecskemet')": "prov_cust",
+            "('Kecskemet', 'Dunaujvaros')": "cust_prov",
+            "('Dunaujvaros', 'Budapest')": "cust_prov",
+            "('Budapest', 'Dunaujvaros')": "prov_cust",
+            "('Nyiregyhaza', 'Budapest')": "cust_prov",
+            "('Budapest', 'Nyiregyhaza')": "prov_cust",
+            "('Debrecen', 'Szeged')": "peer_peer",
+            "('Szeged', 'Debrecen')": "peer_peer",
+            "('Kecskemet', 'Szeged')": "prov_cust",
+            "('Szeged', 'Kecskemet')": "cust_prov",
+            "('Baja', 'Budapest')": "cust_prov",
+            "('Budapest', 'Baja')": "prov_cust",
+            "('Pecs', 'Budapest')": "cust_prov",
+            "('Budapest', 'Pecs')": "prov_cust",
+            "('Szeged', 'Bekescsaba')": "prov_cust",
+            "('Bekescsaba', 'Szeged')": "cust_prov",
+            "('Siofok', 'Budapest')": "cust_prov",
+            "('Budapest', 'Siofok')": "prov_cust",
+            "('Kaposvar', 'Budapest')": "cust_prov",
+            "('Budapest', 'Kaposvar')": "prov_cust",
+            "('Szekszard', 'Budapest')": "cust_prov",
+            "('Budapest', 'Szekszard')": "prov_cust",
+            "('Vienna', 'Sopron')": "cust_prov",
+            "('Sopron', 'Vienna')": "prov_cust",
+            "('Bratislava', 'Gyor')": "cust_prov",
+            "('Gyor', 'Bratislava')": "prov_cust",
+            "('Budapest', 'Vac')": "prov_cust",
+            "('Vac', 'Budapest')": "cust_prov",
+            "('Budapest', 'Nagykanizsa')": "prov_cust",
+            "('Nagykanizsa', 'Budapest')": "cust_prov",
+            "('Budapest', 'Szekesfehervar')": "prov_cust",
+            "('Szekesfehervar', 'Budapest')": "cust_prov",
+            "('Budapest', 'Tatabanya')": "prov_cust",
+            "('Tatabanya', 'Budapest')": "cust_prov",
+            "('Sopron', 'Gyor')": "cust_prov",
+            "('Gyor', 'Sopron')": "prov_cust",
+            "('Sopron', 'Szombathely')": "prov_cust",
+            "('Szombathely', 'Sopron')": "cust_prov",
+            "('Szombathely', 'Zalaegerszeg')": "peer_peer",
+            "('Zalaegerszeg', 'Szombathely')": "peer_peer",
+            "('Zalaegerszeg', 'Veszprem')": "cust_prov",
+            "('Veszprem', 'Zalaegerszeg')": "prov_cust",
+            "('Szekesfehervar', 'Veszprem')": "prov_cust",
+            "('Veszprem', 'Szekesfehervar')": "cust_prov",
+            "('Gyor', 'Tatabanya')": "cust_prov",
+            "('Tatabanya', 'Gyor')": "prov_cust"
+        }
+    },
+    "policy": {
+        "('Miskolc', 'Budapest')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Salgotarjan', 'Budapest')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Godollo', 'Budapest')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Szolnok', 'Budapest')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Szolnok', 'Debrecen')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Dunaujvaros', 'Kecskemet')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Dunaujvaros', 'Budapest')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Nyiregyhaza', 'Budapest')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Debrecen', 'Szolnok')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Debrecen', 'Szeged')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Kecskemet', 'Dunaujvaros')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Kecskemet', 'Szeged')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Baja', 'Budapest')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Pecs', 'Budapest')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Szeged', 'Debrecen')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Szeged', 'Kecskemet')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Szeged', 'Bekescsaba')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Siofok', 'Budapest')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Kaposvar', 'Budapest')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Szekszard', 'Budapest')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Vienna', 'Sopron')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Bratislava', 'Gyor')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Bekescsaba', 'Szeged')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Budapest', 'Miskolc')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Budapest', 'Salgotarjan')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Budapest', 'Godollo')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Budapest', 'Szolnok')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Budapest', 'Dunaujvaros')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Budapest', 'Nyiregyhaza')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Budapest', 'Baja')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Budapest', 'Pecs')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Budapest', 'Siofok')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Budapest', 'Kaposvar')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Budapest', 'Szekszard')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Budapest', 'Vac')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Budapest', 'Nagykanizsa')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Budapest', 'Szekesfehervar')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Budapest', 'Tatabanya')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Vac', 'Budapest')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Sopron', 'Vienna')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Sopron', 'Gyor')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Sopron', 'Szombathely')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Szombathely', 'Sopron')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Szombathely', 'Zalaegerszeg')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Zalaegerszeg', 'Szombathely')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Zalaegerszeg', 'Veszprem')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Nagykanizsa', 'Budapest')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Szekesfehervar', 'Budapest')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Szekesfehervar', 'Veszprem')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Veszprem', 'Zalaegerszeg')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Veszprem', 'Szekesfehervar')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Gyor', 'Bratislava')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Gyor', 'Sopron')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Gyor', 'Tatabanya')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Tatabanya', 'Budapest')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Tatabanya', 'Gyor')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ]
+    }
+}

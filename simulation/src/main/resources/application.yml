@@ -1,0 +1,11 @@
+server:
+  port: 8080
+
+file:
+#    policy-path: /home/mengrui_zhang/projects/HW_BGP/BGP_HW/data/configuration/delta-network-2/policy_delta.json
+    print-device: 25.54.0.8
+#    print-path: /home/mengrui_zhang/projects/HW_BGP/BGP_HW/data/output/
+#    policy-path: data/configuration/delta-network-2/policy_delta.json
+#    print-device:
+    print-path: data/output/
+#

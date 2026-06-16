@@ -1,0 +1,3521 @@
+[
+    {
+        "deviceName": "Portalegre",
+        "deviceIp": "20.0.0.1",
+        "deviceRole": "Router",
+        "deviceGroup": "group",
+        "region": "region",
+        "logiArea": "area",
+        "routerId": [
+            "20.0.0.1"
+        ],
+        "asNum": "65000",
+        "vrfMap": [
+            {
+                "deviceIp": "20.0.0.1",
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "networkRouteList": {
+                    "NetworkRouteDto": [
+                        {
+                            "segment": "60.0.0.0/31",
+                            "NetworkPolicyName": "null",
+                            "id": 0
+                        }
+                    ]
+                },
+                "importRouteList": {
+                    "ImportRouteDto": []
+                },
+                "aggregateRouteList": {
+                    "AggregateRouteDto": []
+                }
+            }
+        ],
+        "routePolicy": [],
+        "interfaceList": [
+            {
+                "segment": "20.0.0.1/32",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.1",
+                "interfaceName": "Loopback0",
+                "interfaceId": 1,
+                "peerIp": "20.0.0.1",
+                "mask": "32",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.0/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.1",
+                "interfaceName": "Gi0/2",
+                "interfaceId": 2,
+                "peerIp": "60.0.0.0",
+                "mask": "31",
+                "type": "PHYSICAL"
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": "20.0.0.1",
+                "localDeviceName": "Portalegre",
+                "remoteIp": "20.0.0.7",
+                "remoteDeviceName": "Lisboa",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.1",
+                        "localDeviceName": "Portalegre",
+                        "remoteIp": "20.0.0.7",
+                        "remoteDeviceName": "Lisboa",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.0",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.1",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remoteAsNumber": "65006",
+                        "localAsNumber": "65000"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "deviceName": "Evora",
+        "deviceIp": "20.0.0.2",
+        "deviceRole": "Router",
+        "deviceGroup": "group",
+        "region": "region",
+        "logiArea": "area",
+        "routerId": [
+            "20.0.0.2"
+        ],
+        "asNum": "65001",
+        "vrfMap": [
+            {
+                "deviceIp": "20.0.0.2",
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "networkRouteList": {
+                    "NetworkRouteDto": [
+                        {
+                            "segment": "60.0.0.2/31",
+                            "NetworkPolicyName": "null",
+                            "id": 0
+                        }
+                    ]
+                },
+                "importRouteList": {
+                    "ImportRouteDto": []
+                },
+                "aggregateRouteList": {
+                    "AggregateRouteDto": []
+                }
+            }
+        ],
+        "routePolicy": [],
+        "interfaceList": [
+            {
+                "segment": "20.0.0.2/32",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.2",
+                "interfaceName": "Loopback0",
+                "interfaceId": 1,
+                "peerIp": "20.0.0.2",
+                "mask": "32",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.2/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.2",
+                "interfaceName": "Gi0/2",
+                "interfaceId": 2,
+                "peerIp": "60.0.0.2",
+                "mask": "31",
+                "type": "PHYSICAL"
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": "20.0.0.2",
+                "localDeviceName": "Evora",
+                "remoteIp": "20.0.0.7",
+                "remoteDeviceName": "Lisboa",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.2",
+                        "localDeviceName": "Evora",
+                        "remoteIp": "20.0.0.7",
+                        "remoteDeviceName": "Lisboa",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.2",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.3",
+                                "interfaceName": "Gi0/3"
+                            }
+                        ],
+                        "remoteAsNumber": "65006",
+                        "localAsNumber": "65001"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "deviceName": "Guarda",
+        "deviceIp": "20.0.0.3",
+        "deviceRole": "Router",
+        "deviceGroup": "group",
+        "region": "region",
+        "logiArea": "area",
+        "routerId": [
+            "20.0.0.3"
+        ],
+        "asNum": "65002",
+        "vrfMap": [
+            {
+                "deviceIp": "20.0.0.3",
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "networkRouteList": {
+                    "NetworkRouteDto": [
+                        {
+                            "segment": "60.0.0.4/31",
+                            "NetworkPolicyName": "null",
+                            "id": 0
+                        }
+                    ]
+                },
+                "importRouteList": {
+                    "ImportRouteDto": []
+                },
+                "aggregateRouteList": {
+                    "AggregateRouteDto": []
+                }
+            }
+        ],
+        "routePolicy": [],
+        "interfaceList": [
+            {
+                "segment": "20.0.0.3/32",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.3",
+                "interfaceName": "Loopback0",
+                "interfaceId": 1,
+                "peerIp": "20.0.0.3",
+                "mask": "32",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.4/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.3",
+                "interfaceName": "Gi0/2",
+                "interfaceId": 2,
+                "peerIp": "60.0.0.4",
+                "mask": "31",
+                "type": "PHYSICAL"
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": "20.0.0.3",
+                "localDeviceName": "Guarda",
+                "remoteIp": "20.0.0.21",
+                "remoteDeviceName": "Porto",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.3",
+                        "localDeviceName": "Guarda",
+                        "remoteIp": "20.0.0.21",
+                        "remoteDeviceName": "Porto",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.4",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.5",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remoteAsNumber": "65020",
+                        "localAsNumber": "65002"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "deviceName": "CasteloBranco",
+        "deviceIp": "20.0.0.4",
+        "deviceRole": "Router",
+        "deviceGroup": "group",
+        "region": "region",
+        "logiArea": "area",
+        "routerId": [
+            "20.0.0.4"
+        ],
+        "asNum": "65003",
+        "vrfMap": [
+            {
+                "deviceIp": "20.0.0.4",
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "networkRouteList": {
+                    "NetworkRouteDto": [
+                        {
+                            "segment": "60.0.0.6/31",
+                            "NetworkPolicyName": "null",
+                            "id": 0
+                        }
+                    ]
+                },
+                "importRouteList": {
+                    "ImportRouteDto": []
+                },
+                "aggregateRouteList": {
+                    "AggregateRouteDto": []
+                }
+            }
+        ],
+        "routePolicy": [],
+        "interfaceList": [
+            {
+                "segment": "20.0.0.4/32",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.4",
+                "interfaceName": "Loopback0",
+                "interfaceId": 1,
+                "peerIp": "20.0.0.4",
+                "mask": "32",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.6/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.4",
+                "interfaceName": "Gi0/2",
+                "interfaceId": 2,
+                "peerIp": "60.0.0.6",
+                "mask": "31",
+                "type": "PHYSICAL"
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": "20.0.0.4",
+                "localDeviceName": "CasteloBranco",
+                "remoteIp": "20.0.0.7",
+                "remoteDeviceName": "Lisboa",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.4",
+                        "localDeviceName": "CasteloBranco",
+                        "remoteIp": "20.0.0.7",
+                        "remoteDeviceName": "Lisboa",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.6",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.7",
+                                "interfaceName": "Gi0/4"
+                            }
+                        ],
+                        "remoteAsNumber": "65006",
+                        "localAsNumber": "65003"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "deviceName": "Tomar",
+        "deviceIp": "20.0.0.5",
+        "deviceRole": "Router",
+        "deviceGroup": "group",
+        "region": "region",
+        "logiArea": "area",
+        "routerId": [
+            "20.0.0.5"
+        ],
+        "asNum": "65004",
+        "vrfMap": [
+            {
+                "deviceIp": "20.0.0.5",
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "networkRouteList": {
+                    "NetworkRouteDto": [
+                        {
+                            "segment": "60.0.0.8/31",
+                            "NetworkPolicyName": "null",
+                            "id": 0
+                        }
+                    ]
+                },
+                "importRouteList": {
+                    "ImportRouteDto": []
+                },
+                "aggregateRouteList": {
+                    "AggregateRouteDto": []
+                }
+            }
+        ],
+        "routePolicy": [],
+        "interfaceList": [
+            {
+                "segment": "20.0.0.5/32",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.5",
+                "interfaceName": "Loopback0",
+                "interfaceId": 1,
+                "peerIp": "20.0.0.5",
+                "mask": "32",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.8/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.5",
+                "interfaceName": "Gi0/2",
+                "interfaceId": 2,
+                "peerIp": "60.0.0.8",
+                "mask": "31",
+                "type": "PHYSICAL"
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": "20.0.0.5",
+                "localDeviceName": "Tomar",
+                "remoteIp": "20.0.0.7",
+                "remoteDeviceName": "Lisboa",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.5",
+                        "localDeviceName": "Tomar",
+                        "remoteIp": "20.0.0.7",
+                        "remoteDeviceName": "Lisboa",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.8",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.9",
+                                "interfaceName": "Gi0/5"
+                            }
+                        ],
+                        "remoteAsNumber": "65006",
+                        "localAsNumber": "65004"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "deviceName": "Leiria",
+        "deviceIp": "20.0.0.6",
+        "deviceRole": "Router",
+        "deviceGroup": "group",
+        "region": "region",
+        "logiArea": "area",
+        "routerId": [
+            "20.0.0.6"
+        ],
+        "asNum": "65005",
+        "vrfMap": [
+            {
+                "deviceIp": "20.0.0.6",
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "networkRouteList": {
+                    "NetworkRouteDto": [
+                        {
+                            "segment": "60.0.0.10/31",
+                            "NetworkPolicyName": "null",
+                            "id": 0
+                        }
+                    ]
+                },
+                "importRouteList": {
+                    "ImportRouteDto": []
+                },
+                "aggregateRouteList": {
+                    "AggregateRouteDto": []
+                }
+            }
+        ],
+        "routePolicy": [],
+        "interfaceList": [
+            {
+                "segment": "20.0.0.6/32",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.6",
+                "interfaceName": "Loopback0",
+                "interfaceId": 1,
+                "peerIp": "20.0.0.6",
+                "mask": "32",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.10/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.6",
+                "interfaceName": "Gi0/2",
+                "interfaceId": 2,
+                "peerIp": "60.0.0.10",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.12/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.6",
+                "interfaceName": "Gi0/3",
+                "interfaceId": 3,
+                "peerIp": "60.0.0.12",
+                "mask": "31",
+                "type": "PHYSICAL"
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": "20.0.0.6",
+                "localDeviceName": "Leiria",
+                "remoteIp": "20.0.0.23",
+                "remoteDeviceName": "Coimbra",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.6",
+                        "localDeviceName": "Leiria",
+                        "remoteIp": "20.0.0.23",
+                        "remoteDeviceName": "Coimbra",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.10",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.11",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remoteAsNumber": "65022",
+                        "localAsNumber": "65005"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.6",
+                "localDeviceName": "Leiria",
+                "remoteIp": "20.0.0.7",
+                "remoteDeviceName": "Lisboa",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.6",
+                        "localDeviceName": "Leiria",
+                        "remoteIp": "20.0.0.7",
+                        "remoteDeviceName": "Lisboa",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.12",
+                                "interfaceName": "Gi0/3"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.13",
+                                "interfaceName": "Gi0/6"
+                            }
+                        ],
+                        "remoteAsNumber": "65006",
+                        "localAsNumber": "65005"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "deviceName": "Lisboa",
+        "deviceIp": "20.0.0.7",
+        "deviceRole": "Router",
+        "deviceGroup": "group",
+        "region": "region",
+        "logiArea": "area",
+        "routerId": [
+            "20.0.0.7"
+        ],
+        "asNum": "65006",
+        "vrfMap": [
+            {
+                "deviceIp": "20.0.0.7",
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "networkRouteList": {
+                    "NetworkRouteDto": [
+                        {
+                            "segment": "60.0.0.2/31",
+                            "NetworkPolicyName": "null",
+                            "id": 0
+                        }
+                    ]
+                },
+                "importRouteList": {
+                    "ImportRouteDto": []
+                },
+                "aggregateRouteList": {
+                    "AggregateRouteDto": []
+                }
+            }
+        ],
+        "routePolicy": [],
+        "interfaceList": [
+            {
+                "segment": "60.0.0.1/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.7",
+                "interfaceName": "Gi0/2",
+                "interfaceId": 2,
+                "peerIp": "60.0.0.1",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.3/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.7",
+                "interfaceName": "Gi0/3",
+                "interfaceId": 3,
+                "peerIp": "60.0.0.3",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.7/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.7",
+                "interfaceName": "Gi0/4",
+                "interfaceId": 4,
+                "peerIp": "60.0.0.7",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.9/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.7",
+                "interfaceName": "Gi0/5",
+                "interfaceId": 5,
+                "peerIp": "60.0.0.9",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.13/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.7",
+                "interfaceName": "Gi0/6",
+                "interfaceId": 6,
+                "peerIp": "60.0.0.13",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "20.0.0.7/32",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.7",
+                "interfaceName": "Loopback0",
+                "interfaceId": 1,
+                "peerIp": "20.0.0.7",
+                "mask": "32",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.14/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.7",
+                "interfaceName": "Gi0/7",
+                "interfaceId": 7,
+                "peerIp": "60.0.0.14",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.16/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.7",
+                "interfaceName": "Gi0/8",
+                "interfaceId": 8,
+                "peerIp": "60.0.0.16",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.18/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.7",
+                "interfaceName": "Gi0/9",
+                "interfaceId": 9,
+                "peerIp": "60.0.0.18",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.20/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.7",
+                "interfaceName": "Gi0/10",
+                "interfaceId": 10,
+                "peerIp": "60.0.0.20",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.22/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.7",
+                "interfaceName": "Gi0/11",
+                "interfaceId": 11,
+                "peerIp": "60.0.0.22",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.24/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.7",
+                "interfaceName": "Gi0/12",
+                "interfaceId": 12,
+                "peerIp": "60.0.0.24",
+                "mask": "31",
+                "type": "PHYSICAL"
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": "20.0.0.7",
+                "localDeviceName": "Lisboa",
+                "remoteIp": "20.0.0.1",
+                "remoteDeviceName": "Portalegre",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.7",
+                        "localDeviceName": "Lisboa",
+                        "remoteIp": "20.0.0.1",
+                        "remoteDeviceName": "Portalegre",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.1",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.0",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remoteAsNumber": "65000",
+                        "localAsNumber": "65006"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.7",
+                "localDeviceName": "Lisboa",
+                "remoteIp": "20.0.0.2",
+                "remoteDeviceName": "Evora",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.7",
+                        "localDeviceName": "Lisboa",
+                        "remoteIp": "20.0.0.2",
+                        "remoteDeviceName": "Evora",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.3",
+                                "interfaceName": "Gi0/3"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.2",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remoteAsNumber": "65001",
+                        "localAsNumber": "65006"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.7",
+                "localDeviceName": "Lisboa",
+                "remoteIp": "20.0.0.4",
+                "remoteDeviceName": "CasteloBranco",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.7",
+                        "localDeviceName": "Lisboa",
+                        "remoteIp": "20.0.0.4",
+                        "remoteDeviceName": "CasteloBranco",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.7",
+                                "interfaceName": "Gi0/4"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.6",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remoteAsNumber": "65003",
+                        "localAsNumber": "65006"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.7",
+                "localDeviceName": "Lisboa",
+                "remoteIp": "20.0.0.5",
+                "remoteDeviceName": "Tomar",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.7",
+                        "localDeviceName": "Lisboa",
+                        "remoteIp": "20.0.0.5",
+                        "remoteDeviceName": "Tomar",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.9",
+                                "interfaceName": "Gi0/5"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.8",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remoteAsNumber": "65004",
+                        "localAsNumber": "65006"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.7",
+                "localDeviceName": "Lisboa",
+                "remoteIp": "20.0.0.6",
+                "remoteDeviceName": "Leiria",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.7",
+                        "localDeviceName": "Lisboa",
+                        "remoteIp": "20.0.0.6",
+                        "remoteDeviceName": "Leiria",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.13",
+                                "interfaceName": "Gi0/6"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.12",
+                                "interfaceName": "Gi0/3"
+                            }
+                        ],
+                        "remoteAsNumber": "65005",
+                        "localAsNumber": "65006"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.7",
+                "localDeviceName": "Lisboa",
+                "remoteIp": "20.0.0.8",
+                "remoteDeviceName": "Samtarem",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.7",
+                        "localDeviceName": "Lisboa",
+                        "remoteIp": "20.0.0.8",
+                        "remoteDeviceName": "Samtarem",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.14",
+                                "interfaceName": "Gi0/7"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.15",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remoteAsNumber": "65007",
+                        "localAsNumber": "65006"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.7",
+                "localDeviceName": "Lisboa",
+                "remoteIp": "20.0.0.9",
+                "remoteDeviceName": "Setubal",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.7",
+                        "localDeviceName": "Lisboa",
+                        "remoteIp": "20.0.0.9",
+                        "remoteDeviceName": "Setubal",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.16",
+                                "interfaceName": "Gi0/8"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.17",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remoteAsNumber": "65008",
+                        "localAsNumber": "65006"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.7",
+                "localDeviceName": "Lisboa",
+                "remoteIp": "20.0.0.10",
+                "remoteDeviceName": "PontaDelgada",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.7",
+                        "localDeviceName": "Lisboa",
+                        "remoteIp": "20.0.0.10",
+                        "remoteDeviceName": "PontaDelgada",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.18",
+                                "interfaceName": "Gi0/9"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.19",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remoteAsNumber": "65009",
+                        "localAsNumber": "65006"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.7",
+                "localDeviceName": "Lisboa",
+                "remoteIp": "20.0.0.13",
+                "remoteDeviceName": "Funchal",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.7",
+                        "localDeviceName": "Lisboa",
+                        "remoteIp": "20.0.0.13",
+                        "remoteDeviceName": "Funchal",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.20",
+                                "interfaceName": "Gi0/10"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.21",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remoteAsNumber": "65012",
+                        "localAsNumber": "65006"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.7",
+                "localDeviceName": "Lisboa",
+                "remoteIp": "20.0.0.14",
+                "remoteDeviceName": "Viseu",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.7",
+                        "localDeviceName": "Lisboa",
+                        "remoteIp": "20.0.0.14",
+                        "remoteDeviceName": "Viseu",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.22",
+                                "interfaceName": "Gi0/11"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.23",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remoteAsNumber": "65013",
+                        "localAsNumber": "65006"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.7",
+                "localDeviceName": "Lisboa",
+                "remoteIp": "20.0.0.23",
+                "remoteDeviceName": "Coimbra",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.7",
+                        "localDeviceName": "Lisboa",
+                        "remoteIp": "20.0.0.23",
+                        "remoteDeviceName": "Coimbra",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.24",
+                                "interfaceName": "Gi0/12"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.25",
+                                "interfaceName": "Gi0/3"
+                            }
+                        ],
+                        "remoteAsNumber": "65022",
+                        "localAsNumber": "65006"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "deviceName": "Samtarem",
+        "deviceIp": "20.0.0.8",
+        "deviceRole": "Router",
+        "deviceGroup": "group",
+        "region": "region",
+        "logiArea": "area",
+        "routerId": [
+            "20.0.0.8"
+        ],
+        "asNum": "65007",
+        "vrfMap": [
+            {
+                "deviceIp": "20.0.0.8",
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "networkRouteList": {
+                    "NetworkRouteDto": [
+                        {
+                            "segment": "60.0.0.14/31",
+                            "NetworkPolicyName": "null",
+                            "id": 0
+                        }
+                    ]
+                },
+                "importRouteList": {
+                    "ImportRouteDto": []
+                },
+                "aggregateRouteList": {
+                    "AggregateRouteDto": []
+                }
+            }
+        ],
+        "routePolicy": [],
+        "interfaceList": [
+            {
+                "segment": "60.0.0.15/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.8",
+                "interfaceName": "Gi0/2",
+                "interfaceId": 2,
+                "peerIp": "60.0.0.15",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "20.0.0.8/32",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.8",
+                "interfaceName": "Loopback0",
+                "interfaceId": 1,
+                "peerIp": "20.0.0.8",
+                "mask": "32",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.26/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.8",
+                "interfaceName": "Gi0/3",
+                "interfaceId": 3,
+                "peerIp": "60.0.0.26",
+                "mask": "31",
+                "type": "PHYSICAL"
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": "20.0.0.8",
+                "localDeviceName": "Samtarem",
+                "remoteIp": "20.0.0.7",
+                "remoteDeviceName": "Lisboa",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.8",
+                        "localDeviceName": "Samtarem",
+                        "remoteIp": "20.0.0.7",
+                        "remoteDeviceName": "Lisboa",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.15",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.14",
+                                "interfaceName": "Gi0/7"
+                            }
+                        ],
+                        "remoteAsNumber": "65006",
+                        "localAsNumber": "65007"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.8",
+                "localDeviceName": "Samtarem",
+                "remoteIp": "20.0.0.23",
+                "remoteDeviceName": "Coimbra",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.8",
+                        "localDeviceName": "Samtarem",
+                        "remoteIp": "20.0.0.23",
+                        "remoteDeviceName": "Coimbra",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.26",
+                                "interfaceName": "Gi0/3"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.27",
+                                "interfaceName": "Gi0/4"
+                            }
+                        ],
+                        "remoteAsNumber": "65022",
+                        "localAsNumber": "65007"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "deviceName": "Setubal",
+        "deviceIp": "20.0.0.9",
+        "deviceRole": "Router",
+        "deviceGroup": "group",
+        "region": "region",
+        "logiArea": "area",
+        "routerId": [
+            "20.0.0.9"
+        ],
+        "asNum": "65008",
+        "vrfMap": [
+            {
+                "deviceIp": "20.0.0.9",
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "networkRouteList": {
+                    "NetworkRouteDto": [
+                        {
+                            "segment": "60.0.0.16/31",
+                            "NetworkPolicyName": "null",
+                            "id": 0
+                        }
+                    ]
+                },
+                "importRouteList": {
+                    "ImportRouteDto": []
+                },
+                "aggregateRouteList": {
+                    "AggregateRouteDto": []
+                }
+            }
+        ],
+        "routePolicy": [],
+        "interfaceList": [
+            {
+                "segment": "60.0.0.17/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.9",
+                "interfaceName": "Gi0/2",
+                "interfaceId": 2,
+                "peerIp": "60.0.0.17",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "20.0.0.9/32",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.9",
+                "interfaceName": "Loopback0",
+                "interfaceId": 1,
+                "peerIp": "20.0.0.9",
+                "mask": "32",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.28/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.9",
+                "interfaceName": "Gi0/3",
+                "interfaceId": 3,
+                "peerIp": "60.0.0.28",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.30/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.9",
+                "interfaceName": "Gi0/4",
+                "interfaceId": 4,
+                "peerIp": "60.0.0.30",
+                "mask": "31",
+                "type": "PHYSICAL"
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": "20.0.0.9",
+                "localDeviceName": "Setubal",
+                "remoteIp": "20.0.0.7",
+                "remoteDeviceName": "Lisboa",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.9",
+                        "localDeviceName": "Setubal",
+                        "remoteIp": "20.0.0.7",
+                        "remoteDeviceName": "Lisboa",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.17",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.16",
+                                "interfaceName": "Gi0/8"
+                            }
+                        ],
+                        "remoteAsNumber": "65006",
+                        "localAsNumber": "65008"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.9",
+                "localDeviceName": "Setubal",
+                "remoteIp": "20.0.0.11",
+                "remoteDeviceName": "Beja",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.9",
+                        "localDeviceName": "Setubal",
+                        "remoteIp": "20.0.0.11",
+                        "remoteDeviceName": "Beja",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.28",
+                                "interfaceName": "Gi0/3"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.29",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remoteAsNumber": "65010",
+                        "localAsNumber": "65008"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.9",
+                "localDeviceName": "Setubal",
+                "remoteIp": "20.0.0.12",
+                "remoteDeviceName": "Faro",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.9",
+                        "localDeviceName": "Setubal",
+                        "remoteIp": "20.0.0.12",
+                        "remoteDeviceName": "Faro",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.30",
+                                "interfaceName": "Gi0/4"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.31",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remoteAsNumber": "65011",
+                        "localAsNumber": "65008"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "deviceName": "PontaDelgada",
+        "deviceIp": "20.0.0.10",
+        "deviceRole": "Router",
+        "deviceGroup": "group",
+        "region": "region",
+        "logiArea": "area",
+        "routerId": [
+            "20.0.0.10"
+        ],
+        "asNum": "65009",
+        "vrfMap": [
+            {
+                "deviceIp": "20.0.0.10",
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "networkRouteList": {
+                    "NetworkRouteDto": [
+                        {
+                            "segment": "60.0.0.18/31",
+                            "NetworkPolicyName": "null",
+                            "id": 0
+                        }
+                    ]
+                },
+                "importRouteList": {
+                    "ImportRouteDto": []
+                },
+                "aggregateRouteList": {
+                    "AggregateRouteDto": []
+                }
+            }
+        ],
+        "routePolicy": [],
+        "interfaceList": [
+            {
+                "segment": "60.0.0.19/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.10",
+                "interfaceName": "Gi0/2",
+                "interfaceId": 2,
+                "peerIp": "60.0.0.19",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "20.0.0.10/32",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.10",
+                "interfaceName": "Loopback0",
+                "interfaceId": 1,
+                "peerIp": "20.0.0.10",
+                "mask": "32",
+                "type": "PHYSICAL"
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": "20.0.0.10",
+                "localDeviceName": "PontaDelgada",
+                "remoteIp": "20.0.0.7",
+                "remoteDeviceName": "Lisboa",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.10",
+                        "localDeviceName": "PontaDelgada",
+                        "remoteIp": "20.0.0.7",
+                        "remoteDeviceName": "Lisboa",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.19",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.18",
+                                "interfaceName": "Gi0/9"
+                            }
+                        ],
+                        "remoteAsNumber": "65006",
+                        "localAsNumber": "65009"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "deviceName": "Beja",
+        "deviceIp": "20.0.0.11",
+        "deviceRole": "Router",
+        "deviceGroup": "group",
+        "region": "region",
+        "logiArea": "area",
+        "routerId": [
+            "20.0.0.11"
+        ],
+        "asNum": "65010",
+        "vrfMap": [
+            {
+                "deviceIp": "20.0.0.11",
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "networkRouteList": {
+                    "NetworkRouteDto": [
+                        {
+                            "segment": "60.0.0.28/31",
+                            "NetworkPolicyName": "null",
+                            "id": 0
+                        }
+                    ]
+                },
+                "importRouteList": {
+                    "ImportRouteDto": []
+                },
+                "aggregateRouteList": {
+                    "AggregateRouteDto": []
+                }
+            }
+        ],
+        "routePolicy": [],
+        "interfaceList": [
+            {
+                "segment": "60.0.0.29/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.11",
+                "interfaceName": "Gi0/2",
+                "interfaceId": 2,
+                "peerIp": "60.0.0.29",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "20.0.0.11/32",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.11",
+                "interfaceName": "Loopback0",
+                "interfaceId": 1,
+                "peerIp": "20.0.0.11",
+                "mask": "32",
+                "type": "PHYSICAL"
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": "20.0.0.11",
+                "localDeviceName": "Beja",
+                "remoteIp": "20.0.0.9",
+                "remoteDeviceName": "Setubal",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.11",
+                        "localDeviceName": "Beja",
+                        "remoteIp": "20.0.0.9",
+                        "remoteDeviceName": "Setubal",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.29",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.28",
+                                "interfaceName": "Gi0/3"
+                            }
+                        ],
+                        "remoteAsNumber": "65008",
+                        "localAsNumber": "65010"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "deviceName": "Faro",
+        "deviceIp": "20.0.0.12",
+        "deviceRole": "Router",
+        "deviceGroup": "group",
+        "region": "region",
+        "logiArea": "area",
+        "routerId": [
+            "20.0.0.12"
+        ],
+        "asNum": "65011",
+        "vrfMap": [
+            {
+                "deviceIp": "20.0.0.12",
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "networkRouteList": {
+                    "NetworkRouteDto": [
+                        {
+                            "segment": "60.0.0.30/31",
+                            "NetworkPolicyName": "null",
+                            "id": 0
+                        }
+                    ]
+                },
+                "importRouteList": {
+                    "ImportRouteDto": []
+                },
+                "aggregateRouteList": {
+                    "AggregateRouteDto": []
+                }
+            }
+        ],
+        "routePolicy": [],
+        "interfaceList": [
+            {
+                "segment": "60.0.0.31/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.12",
+                "interfaceName": "Gi0/2",
+                "interfaceId": 2,
+                "peerIp": "60.0.0.31",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "20.0.0.12/32",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.12",
+                "interfaceName": "Loopback0",
+                "interfaceId": 1,
+                "peerIp": "20.0.0.12",
+                "mask": "32",
+                "type": "PHYSICAL"
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": "20.0.0.12",
+                "localDeviceName": "Faro",
+                "remoteIp": "20.0.0.9",
+                "remoteDeviceName": "Setubal",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.12",
+                        "localDeviceName": "Faro",
+                        "remoteIp": "20.0.0.9",
+                        "remoteDeviceName": "Setubal",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.31",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.30",
+                                "interfaceName": "Gi0/4"
+                            }
+                        ],
+                        "remoteAsNumber": "65008",
+                        "localAsNumber": "65011"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "deviceName": "Funchal",
+        "deviceIp": "20.0.0.13",
+        "deviceRole": "Router",
+        "deviceGroup": "group",
+        "region": "region",
+        "logiArea": "area",
+        "routerId": [
+            "20.0.0.13"
+        ],
+        "asNum": "65012",
+        "vrfMap": [
+            {
+                "deviceIp": "20.0.0.13",
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "networkRouteList": {
+                    "NetworkRouteDto": [
+                        {
+                            "segment": "60.0.0.20/31",
+                            "NetworkPolicyName": "null",
+                            "id": 0
+                        }
+                    ]
+                },
+                "importRouteList": {
+                    "ImportRouteDto": []
+                },
+                "aggregateRouteList": {
+                    "AggregateRouteDto": []
+                }
+            }
+        ],
+        "routePolicy": [],
+        "interfaceList": [
+            {
+                "segment": "60.0.0.21/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.13",
+                "interfaceName": "Gi0/2",
+                "interfaceId": 2,
+                "peerIp": "60.0.0.21",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "20.0.0.13/32",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.13",
+                "interfaceName": "Loopback0",
+                "interfaceId": 1,
+                "peerIp": "20.0.0.13",
+                "mask": "32",
+                "type": "PHYSICAL"
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": "20.0.0.13",
+                "localDeviceName": "Funchal",
+                "remoteIp": "20.0.0.7",
+                "remoteDeviceName": "Lisboa",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.13",
+                        "localDeviceName": "Funchal",
+                        "remoteIp": "20.0.0.7",
+                        "remoteDeviceName": "Lisboa",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.21",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.20",
+                                "interfaceName": "Gi0/10"
+                            }
+                        ],
+                        "remoteAsNumber": "65006",
+                        "localAsNumber": "65012"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "deviceName": "Viseu",
+        "deviceIp": "20.0.0.14",
+        "deviceRole": "Router",
+        "deviceGroup": "group",
+        "region": "region",
+        "logiArea": "area",
+        "routerId": [
+            "20.0.0.14"
+        ],
+        "asNum": "65013",
+        "vrfMap": [
+            {
+                "deviceIp": "20.0.0.14",
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "networkRouteList": {
+                    "NetworkRouteDto": [
+                        {
+                            "segment": "60.0.0.22/31",
+                            "NetworkPolicyName": "null",
+                            "id": 0
+                        }
+                    ]
+                },
+                "importRouteList": {
+                    "ImportRouteDto": []
+                },
+                "aggregateRouteList": {
+                    "AggregateRouteDto": []
+                }
+            }
+        ],
+        "routePolicy": [],
+        "interfaceList": [
+            {
+                "segment": "60.0.0.23/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.14",
+                "interfaceName": "Gi0/2",
+                "interfaceId": 2,
+                "peerIp": "60.0.0.23",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "20.0.0.14/32",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.14",
+                "interfaceName": "Loopback0",
+                "interfaceId": 1,
+                "peerIp": "20.0.0.14",
+                "mask": "32",
+                "type": "PHYSICAL"
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": "20.0.0.14",
+                "localDeviceName": "Viseu",
+                "remoteIp": "20.0.0.7",
+                "remoteDeviceName": "Lisboa",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.14",
+                        "localDeviceName": "Viseu",
+                        "remoteIp": "20.0.0.7",
+                        "remoteDeviceName": "Lisboa",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.23",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.22",
+                                "interfaceName": "Gi0/11"
+                            }
+                        ],
+                        "remoteAsNumber": "65006",
+                        "localAsNumber": "65013"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "deviceName": "Covilha",
+        "deviceIp": "20.0.0.15",
+        "deviceRole": "Router",
+        "deviceGroup": "group",
+        "region": "region",
+        "logiArea": "area",
+        "routerId": [
+            "20.0.0.15"
+        ],
+        "asNum": "65014",
+        "vrfMap": [
+            {
+                "deviceIp": "20.0.0.15",
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "networkRouteList": {
+                    "NetworkRouteDto": [
+                        {
+                            "segment": "60.0.0.32/31",
+                            "NetworkPolicyName": "null",
+                            "id": 0
+                        }
+                    ]
+                },
+                "importRouteList": {
+                    "ImportRouteDto": []
+                },
+                "aggregateRouteList": {
+                    "AggregateRouteDto": []
+                }
+            }
+        ],
+        "routePolicy": [],
+        "interfaceList": [
+            {
+                "segment": "20.0.0.15/32",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.15",
+                "interfaceName": "Loopback0",
+                "interfaceId": 1,
+                "peerIp": "20.0.0.15",
+                "mask": "32",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.32/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.15",
+                "interfaceName": "Gi0/2",
+                "interfaceId": 2,
+                "peerIp": "60.0.0.32",
+                "mask": "31",
+                "type": "PHYSICAL"
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": "20.0.0.15",
+                "localDeviceName": "Covilha",
+                "remoteIp": "20.0.0.21",
+                "remoteDeviceName": "Porto",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.15",
+                        "localDeviceName": "Covilha",
+                        "remoteIp": "20.0.0.21",
+                        "remoteDeviceName": "Porto",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.32",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.33",
+                                "interfaceName": "Gi0/3"
+                            }
+                        ],
+                        "remoteAsNumber": "65020",
+                        "localAsNumber": "65014"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "deviceName": "VianadeCastelo",
+        "deviceIp": "20.0.0.16",
+        "deviceRole": "Router",
+        "deviceGroup": "group",
+        "region": "region",
+        "logiArea": "area",
+        "routerId": [
+            "20.0.0.16"
+        ],
+        "asNum": "65015",
+        "vrfMap": [
+            {
+                "deviceIp": "20.0.0.16",
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "networkRouteList": {
+                    "NetworkRouteDto": [
+                        {
+                            "segment": "60.0.0.34/31",
+                            "NetworkPolicyName": "null",
+                            "id": 0
+                        }
+                    ]
+                },
+                "importRouteList": {
+                    "ImportRouteDto": []
+                },
+                "aggregateRouteList": {
+                    "AggregateRouteDto": []
+                }
+            }
+        ],
+        "routePolicy": [],
+        "interfaceList": [
+            {
+                "segment": "20.0.0.16/32",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.16",
+                "interfaceName": "Loopback0",
+                "interfaceId": 1,
+                "peerIp": "20.0.0.16",
+                "mask": "32",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.34/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.16",
+                "interfaceName": "Gi0/2",
+                "interfaceId": 2,
+                "peerIp": "60.0.0.34",
+                "mask": "31",
+                "type": "PHYSICAL"
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": "20.0.0.16",
+                "localDeviceName": "VianadeCastelo",
+                "remoteIp": "20.0.0.21",
+                "remoteDeviceName": "Porto",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.16",
+                        "localDeviceName": "VianadeCastelo",
+                        "remoteIp": "20.0.0.21",
+                        "remoteDeviceName": "Porto",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.34",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.35",
+                                "interfaceName": "Gi0/4"
+                            }
+                        ],
+                        "remoteAsNumber": "65020",
+                        "localAsNumber": "65015"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "deviceName": "Barcelos",
+        "deviceIp": "20.0.0.17",
+        "deviceRole": "Router",
+        "deviceGroup": "group",
+        "region": "region",
+        "logiArea": "area",
+        "routerId": [
+            "20.0.0.17"
+        ],
+        "asNum": "65016",
+        "vrfMap": [
+            {
+                "deviceIp": "20.0.0.17",
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "networkRouteList": {
+                    "NetworkRouteDto": [
+                        {
+                            "segment": "60.0.0.36/31",
+                            "NetworkPolicyName": "null",
+                            "id": 0
+                        }
+                    ]
+                },
+                "importRouteList": {
+                    "ImportRouteDto": []
+                },
+                "aggregateRouteList": {
+                    "AggregateRouteDto": []
+                }
+            }
+        ],
+        "routePolicy": [],
+        "interfaceList": [
+            {
+                "segment": "20.0.0.17/32",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.17",
+                "interfaceName": "Loopback0",
+                "interfaceId": 1,
+                "peerIp": "20.0.0.17",
+                "mask": "32",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.36/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.17",
+                "interfaceName": "Gi0/2",
+                "interfaceId": 2,
+                "peerIp": "60.0.0.36",
+                "mask": "31",
+                "type": "PHYSICAL"
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": "20.0.0.17",
+                "localDeviceName": "Barcelos",
+                "remoteIp": "20.0.0.21",
+                "remoteDeviceName": "Porto",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.17",
+                        "localDeviceName": "Barcelos",
+                        "remoteIp": "20.0.0.21",
+                        "remoteDeviceName": "Porto",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.36",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.37",
+                                "interfaceName": "Gi0/5"
+                            }
+                        ],
+                        "remoteAsNumber": "65020",
+                        "localAsNumber": "65016"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "deviceName": "Braga",
+        "deviceIp": "20.0.0.18",
+        "deviceRole": "Router",
+        "deviceGroup": "group",
+        "region": "region",
+        "logiArea": "area",
+        "routerId": [
+            "20.0.0.18"
+        ],
+        "asNum": "65017",
+        "vrfMap": [
+            {
+                "deviceIp": "20.0.0.18",
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "networkRouteList": {
+                    "NetworkRouteDto": [
+                        {
+                            "segment": "60.0.0.38/31",
+                            "NetworkPolicyName": "null",
+                            "id": 0
+                        }
+                    ]
+                },
+                "importRouteList": {
+                    "ImportRouteDto": []
+                },
+                "aggregateRouteList": {
+                    "AggregateRouteDto": []
+                }
+            }
+        ],
+        "routePolicy": [],
+        "interfaceList": [
+            {
+                "segment": "20.0.0.18/32",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.18",
+                "interfaceName": "Loopback0",
+                "interfaceId": 1,
+                "peerIp": "20.0.0.18",
+                "mask": "32",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.38/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.18",
+                "interfaceName": "Gi0/2",
+                "interfaceId": 2,
+                "peerIp": "60.0.0.38",
+                "mask": "31",
+                "type": "PHYSICAL"
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": "20.0.0.18",
+                "localDeviceName": "Braga",
+                "remoteIp": "20.0.0.21",
+                "remoteDeviceName": "Porto",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.18",
+                        "localDeviceName": "Braga",
+                        "remoteIp": "20.0.0.21",
+                        "remoteDeviceName": "Porto",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.38",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.39",
+                                "interfaceName": "Gi0/6"
+                            }
+                        ],
+                        "remoteAsNumber": "65020",
+                        "localAsNumber": "65017"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "deviceName": "VillaReal",
+        "deviceIp": "20.0.0.19",
+        "deviceRole": "Router",
+        "deviceGroup": "group",
+        "region": "region",
+        "logiArea": "area",
+        "routerId": [
+            "20.0.0.19"
+        ],
+        "asNum": "65018",
+        "vrfMap": [
+            {
+                "deviceIp": "20.0.0.19",
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "networkRouteList": {
+                    "NetworkRouteDto": [
+                        {
+                            "segment": "60.0.0.40/31",
+                            "NetworkPolicyName": "null",
+                            "id": 0
+                        }
+                    ]
+                },
+                "importRouteList": {
+                    "ImportRouteDto": []
+                },
+                "aggregateRouteList": {
+                    "AggregateRouteDto": []
+                }
+            }
+        ],
+        "routePolicy": [],
+        "interfaceList": [
+            {
+                "segment": "20.0.0.19/32",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.19",
+                "interfaceName": "Loopback0",
+                "interfaceId": 1,
+                "peerIp": "20.0.0.19",
+                "mask": "32",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.40/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.19",
+                "interfaceName": "Gi0/2",
+                "interfaceId": 2,
+                "peerIp": "60.0.0.40",
+                "mask": "31",
+                "type": "PHYSICAL"
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": "20.0.0.19",
+                "localDeviceName": "VillaReal",
+                "remoteIp": "20.0.0.21",
+                "remoteDeviceName": "Porto",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.19",
+                        "localDeviceName": "VillaReal",
+                        "remoteIp": "20.0.0.21",
+                        "remoteDeviceName": "Porto",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.40",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.41",
+                                "interfaceName": "Gi0/7"
+                            }
+                        ],
+                        "remoteAsNumber": "65020",
+                        "localAsNumber": "65018"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "deviceName": "Bragancia",
+        "deviceIp": "20.0.0.20",
+        "deviceRole": "Router",
+        "deviceGroup": "group",
+        "region": "region",
+        "logiArea": "area",
+        "routerId": [
+            "20.0.0.20"
+        ],
+        "asNum": "65019",
+        "vrfMap": [
+            {
+                "deviceIp": "20.0.0.20",
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "networkRouteList": {
+                    "NetworkRouteDto": [
+                        {
+                            "segment": "60.0.0.42/31",
+                            "NetworkPolicyName": "null",
+                            "id": 0
+                        }
+                    ]
+                },
+                "importRouteList": {
+                    "ImportRouteDto": []
+                },
+                "aggregateRouteList": {
+                    "AggregateRouteDto": []
+                }
+            }
+        ],
+        "routePolicy": [],
+        "interfaceList": [
+            {
+                "segment": "20.0.0.20/32",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.20",
+                "interfaceName": "Loopback0",
+                "interfaceId": 1,
+                "peerIp": "20.0.0.20",
+                "mask": "32",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.42/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.20",
+                "interfaceName": "Gi0/2",
+                "interfaceId": 2,
+                "peerIp": "60.0.0.42",
+                "mask": "31",
+                "type": "PHYSICAL"
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": "20.0.0.20",
+                "localDeviceName": "Bragancia",
+                "remoteIp": "20.0.0.21",
+                "remoteDeviceName": "Porto",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.20",
+                        "localDeviceName": "Bragancia",
+                        "remoteIp": "20.0.0.21",
+                        "remoteDeviceName": "Porto",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.42",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.43",
+                                "interfaceName": "Gi0/8"
+                            }
+                        ],
+                        "remoteAsNumber": "65020",
+                        "localAsNumber": "65019"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "deviceName": "Porto",
+        "deviceIp": "20.0.0.21",
+        "deviceRole": "Router",
+        "deviceGroup": "group",
+        "region": "region",
+        "logiArea": "area",
+        "routerId": [
+            "20.0.0.21"
+        ],
+        "asNum": "65020",
+        "vrfMap": [
+            {
+                "deviceIp": "20.0.0.21",
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "networkRouteList": {
+                    "NetworkRouteDto": [
+                        {
+                            "segment": "60.0.0.32/31",
+                            "NetworkPolicyName": "null",
+                            "id": 0
+                        }
+                    ]
+                },
+                "importRouteList": {
+                    "ImportRouteDto": []
+                },
+                "aggregateRouteList": {
+                    "AggregateRouteDto": []
+                }
+            }
+        ],
+        "routePolicy": [],
+        "interfaceList": [
+            {
+                "segment": "60.0.0.5/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.21",
+                "interfaceName": "Gi0/2",
+                "interfaceId": 2,
+                "peerIp": "60.0.0.5",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.33/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.21",
+                "interfaceName": "Gi0/3",
+                "interfaceId": 3,
+                "peerIp": "60.0.0.33",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.35/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.21",
+                "interfaceName": "Gi0/4",
+                "interfaceId": 4,
+                "peerIp": "60.0.0.35",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.37/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.21",
+                "interfaceName": "Gi0/5",
+                "interfaceId": 5,
+                "peerIp": "60.0.0.37",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.39/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.21",
+                "interfaceName": "Gi0/6",
+                "interfaceId": 6,
+                "peerIp": "60.0.0.39",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.41/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.21",
+                "interfaceName": "Gi0/7",
+                "interfaceId": 7,
+                "peerIp": "60.0.0.41",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.43/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.21",
+                "interfaceName": "Gi0/8",
+                "interfaceId": 8,
+                "peerIp": "60.0.0.43",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "20.0.0.21/32",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.21",
+                "interfaceName": "Loopback0",
+                "interfaceId": 1,
+                "peerIp": "20.0.0.21",
+                "mask": "32",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.44/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.21",
+                "interfaceName": "Gi0/9",
+                "interfaceId": 9,
+                "peerIp": "60.0.0.44",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.46/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.21",
+                "interfaceName": "Gi0/10",
+                "interfaceId": 10,
+                "peerIp": "60.0.0.46",
+                "mask": "31",
+                "type": "PHYSICAL"
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": "20.0.0.21",
+                "localDeviceName": "Porto",
+                "remoteIp": "20.0.0.3",
+                "remoteDeviceName": "Guarda",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.21",
+                        "localDeviceName": "Porto",
+                        "remoteIp": "20.0.0.3",
+                        "remoteDeviceName": "Guarda",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.5",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.4",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remoteAsNumber": "65002",
+                        "localAsNumber": "65020"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.21",
+                "localDeviceName": "Porto",
+                "remoteIp": "20.0.0.15",
+                "remoteDeviceName": "Covilha",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.21",
+                        "localDeviceName": "Porto",
+                        "remoteIp": "20.0.0.15",
+                        "remoteDeviceName": "Covilha",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.33",
+                                "interfaceName": "Gi0/3"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.32",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remoteAsNumber": "65014",
+                        "localAsNumber": "65020"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.21",
+                "localDeviceName": "Porto",
+                "remoteIp": "20.0.0.16",
+                "remoteDeviceName": "VianadeCastelo",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.21",
+                        "localDeviceName": "Porto",
+                        "remoteIp": "20.0.0.16",
+                        "remoteDeviceName": "VianadeCastelo",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.35",
+                                "interfaceName": "Gi0/4"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.34",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remoteAsNumber": "65015",
+                        "localAsNumber": "65020"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.21",
+                "localDeviceName": "Porto",
+                "remoteIp": "20.0.0.17",
+                "remoteDeviceName": "Barcelos",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.21",
+                        "localDeviceName": "Porto",
+                        "remoteIp": "20.0.0.17",
+                        "remoteDeviceName": "Barcelos",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.37",
+                                "interfaceName": "Gi0/5"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.36",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remoteAsNumber": "65016",
+                        "localAsNumber": "65020"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.21",
+                "localDeviceName": "Porto",
+                "remoteIp": "20.0.0.18",
+                "remoteDeviceName": "Braga",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.21",
+                        "localDeviceName": "Porto",
+                        "remoteIp": "20.0.0.18",
+                        "remoteDeviceName": "Braga",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.39",
+                                "interfaceName": "Gi0/6"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.38",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remoteAsNumber": "65017",
+                        "localAsNumber": "65020"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.21",
+                "localDeviceName": "Porto",
+                "remoteIp": "20.0.0.19",
+                "remoteDeviceName": "VillaReal",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.21",
+                        "localDeviceName": "Porto",
+                        "remoteIp": "20.0.0.19",
+                        "remoteDeviceName": "VillaReal",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.41",
+                                "interfaceName": "Gi0/7"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.40",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remoteAsNumber": "65018",
+                        "localAsNumber": "65020"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.21",
+                "localDeviceName": "Porto",
+                "remoteIp": "20.0.0.20",
+                "remoteDeviceName": "Bragancia",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.21",
+                        "localDeviceName": "Porto",
+                        "remoteIp": "20.0.0.20",
+                        "remoteDeviceName": "Bragancia",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.43",
+                                "interfaceName": "Gi0/8"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.42",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remoteAsNumber": "65019",
+                        "localAsNumber": "65020"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.21",
+                "localDeviceName": "Porto",
+                "remoteIp": "20.0.0.22",
+                "remoteDeviceName": "Aveiro",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.21",
+                        "localDeviceName": "Porto",
+                        "remoteIp": "20.0.0.22",
+                        "remoteDeviceName": "Aveiro",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.44",
+                                "interfaceName": "Gi0/9"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.45",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remoteAsNumber": "65021",
+                        "localAsNumber": "65020"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.21",
+                "localDeviceName": "Porto",
+                "remoteIp": "20.0.0.23",
+                "remoteDeviceName": "Coimbra",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.21",
+                        "localDeviceName": "Porto",
+                        "remoteIp": "20.0.0.23",
+                        "remoteDeviceName": "Coimbra",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.46",
+                                "interfaceName": "Gi0/10"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.47",
+                                "interfaceName": "Gi0/5"
+                            }
+                        ],
+                        "remoteAsNumber": "65022",
+                        "localAsNumber": "65020"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "deviceName": "Aveiro",
+        "deviceIp": "20.0.0.22",
+        "deviceRole": "Router",
+        "deviceGroup": "group",
+        "region": "region",
+        "logiArea": "area",
+        "routerId": [
+            "20.0.0.22"
+        ],
+        "asNum": "65021",
+        "vrfMap": [
+            {
+                "deviceIp": "20.0.0.22",
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "networkRouteList": {
+                    "NetworkRouteDto": [
+                        {
+                            "segment": "60.0.0.44/31",
+                            "NetworkPolicyName": "null",
+                            "id": 0
+                        }
+                    ]
+                },
+                "importRouteList": {
+                    "ImportRouteDto": []
+                },
+                "aggregateRouteList": {
+                    "AggregateRouteDto": []
+                }
+            }
+        ],
+        "routePolicy": [],
+        "interfaceList": [
+            {
+                "segment": "60.0.0.45/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.22",
+                "interfaceName": "Gi0/2",
+                "interfaceId": 2,
+                "peerIp": "60.0.0.45",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "20.0.0.22/32",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.22",
+                "interfaceName": "Loopback0",
+                "interfaceId": 1,
+                "peerIp": "20.0.0.22",
+                "mask": "32",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.48/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.22",
+                "interfaceName": "Gi0/3",
+                "interfaceId": 3,
+                "peerIp": "60.0.0.48",
+                "mask": "31",
+                "type": "PHYSICAL"
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": "20.0.0.22",
+                "localDeviceName": "Aveiro",
+                "remoteIp": "20.0.0.21",
+                "remoteDeviceName": "Porto",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.22",
+                        "localDeviceName": "Aveiro",
+                        "remoteIp": "20.0.0.21",
+                        "remoteDeviceName": "Porto",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.45",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.44",
+                                "interfaceName": "Gi0/9"
+                            }
+                        ],
+                        "remoteAsNumber": "65020",
+                        "localAsNumber": "65021"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.22",
+                "localDeviceName": "Aveiro",
+                "remoteIp": "20.0.0.23",
+                "remoteDeviceName": "Coimbra",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.22",
+                        "localDeviceName": "Aveiro",
+                        "remoteIp": "20.0.0.23",
+                        "remoteDeviceName": "Coimbra",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.48",
+                                "interfaceName": "Gi0/3"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.49",
+                                "interfaceName": "Gi0/6"
+                            }
+                        ],
+                        "remoteAsNumber": "65022",
+                        "localAsNumber": "65021"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "deviceName": "Coimbra",
+        "deviceIp": "20.0.0.23",
+        "deviceRole": "Router",
+        "deviceGroup": "group",
+        "region": "region",
+        "logiArea": "area",
+        "routerId": [
+            "20.0.0.23"
+        ],
+        "asNum": "65022",
+        "vrfMap": [
+            {
+                "deviceIp": "20.0.0.23",
+                "vrfName": "_public_",
+                "maxLbNum": "64",
+                "lbAsPathRelax": "true",
+                "preferenceExternal": "120",
+                "preferenceInternal": "255",
+                "preferenceLocal": "200",
+                "networkRouteList": {
+                    "NetworkRouteDto": [
+                        {
+                            "segment": "60.0.0.24/31",
+                            "NetworkPolicyName": "null",
+                            "id": 0
+                        }
+                    ]
+                },
+                "importRouteList": {
+                    "ImportRouteDto": []
+                },
+                "aggregateRouteList": {
+                    "AggregateRouteDto": []
+                }
+            }
+        ],
+        "routePolicy": [],
+        "interfaceList": [
+            {
+                "segment": "60.0.0.11/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.23",
+                "interfaceName": "Gi0/2",
+                "interfaceId": 2,
+                "peerIp": "60.0.0.11",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.25/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.23",
+                "interfaceName": "Gi0/3",
+                "interfaceId": 3,
+                "peerIp": "60.0.0.25",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.27/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.23",
+                "interfaceName": "Gi0/4",
+                "interfaceId": 4,
+                "peerIp": "60.0.0.27",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.47/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.23",
+                "interfaceName": "Gi0/5",
+                "interfaceId": 5,
+                "peerIp": "60.0.0.47",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "60.0.0.49/31",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.23",
+                "interfaceName": "Gi0/6",
+                "interfaceId": 6,
+                "peerIp": "60.0.0.49",
+                "mask": "31",
+                "type": "PHYSICAL"
+            },
+            {
+                "segment": "20.0.0.23/32",
+                "nextHop": "null",
+                "deviceIp": "20.0.0.23",
+                "interfaceName": "Loopback0",
+                "interfaceId": 1,
+                "peerIp": "20.0.0.23",
+                "mask": "32",
+                "type": "PHYSICAL"
+            }
+        ],
+        "edgeList": [
+            {
+                "localIp": "20.0.0.23",
+                "localDeviceName": "Coimbra",
+                "remoteIp": "20.0.0.6",
+                "remoteDeviceName": "Leiria",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.23",
+                        "localDeviceName": "Coimbra",
+                        "remoteIp": "20.0.0.6",
+                        "remoteDeviceName": "Leiria",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.11",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.10",
+                                "interfaceName": "Gi0/2"
+                            }
+                        ],
+                        "remoteAsNumber": "65005",
+                        "localAsNumber": "65022"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.23",
+                "localDeviceName": "Coimbra",
+                "remoteIp": "20.0.0.7",
+                "remoteDeviceName": "Lisboa",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.23",
+                        "localDeviceName": "Coimbra",
+                        "remoteIp": "20.0.0.7",
+                        "remoteDeviceName": "Lisboa",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.25",
+                                "interfaceName": "Gi0/3"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.24",
+                                "interfaceName": "Gi0/12"
+                            }
+                        ],
+                        "remoteAsNumber": "65006",
+                        "localAsNumber": "65022"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.23",
+                "localDeviceName": "Coimbra",
+                "remoteIp": "20.0.0.8",
+                "remoteDeviceName": "Samtarem",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.23",
+                        "localDeviceName": "Coimbra",
+                        "remoteIp": "20.0.0.8",
+                        "remoteDeviceName": "Samtarem",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.27",
+                                "interfaceName": "Gi0/4"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.26",
+                                "interfaceName": "Gi0/3"
+                            }
+                        ],
+                        "remoteAsNumber": "65007",
+                        "localAsNumber": "65022"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.23",
+                "localDeviceName": "Coimbra",
+                "remoteIp": "20.0.0.21",
+                "remoteDeviceName": "Porto",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.23",
+                        "localDeviceName": "Coimbra",
+                        "remoteIp": "20.0.0.21",
+                        "remoteDeviceName": "Porto",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.47",
+                                "interfaceName": "Gi0/5"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.46",
+                                "interfaceName": "Gi0/10"
+                            }
+                        ],
+                        "remoteAsNumber": "65020",
+                        "localAsNumber": "65022"
+                    }
+                ]
+            },
+            {
+                "localIp": "20.0.0.23",
+                "localDeviceName": "Coimbra",
+                "remoteIp": "20.0.0.22",
+                "remoteDeviceName": "Aveiro",
+                "localExportPolicyName": "null",
+                "localExportPolicyId": 0,
+                "localImportPolicyName": "null",
+                "localImportPolicyId": 0,
+                "remoteExportPolicyName": "null",
+                "remoteExportPolicyId": 0,
+                "remoteImportPolicyName": "null",
+                "remoteImportPolicyId": 0,
+                "peerList": [
+                    {
+                        "localIp": "20.0.0.23",
+                        "localDeviceName": "Coimbra",
+                        "remoteIp": "20.0.0.22",
+                        "remoteDeviceName": "Aveiro",
+                        "localPeers": [
+                            {
+                                "peerIp": "60.0.0.49",
+                                "interfaceName": "Gi0/6"
+                            }
+                        ],
+                        "remotePeers": [
+                            {
+                                "peerIp": "60.0.0.48",
+                                "interfaceName": "Gi0/3"
+                            }
+                        ],
+                        "remoteAsNumber": "65021",
+                        "localAsNumber": "65022"
+                    }
+                ]
+            }
+        ]
+    }
+]

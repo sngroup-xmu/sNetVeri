@@ -1,0 +1,2363 @@
+{
+    "description": "Topology Zoo network GTS_slovakia, with policy based on Gao-Rexford conditions.",
+    "nodes": [
+        "Ruzombernk",
+        "Svit",
+        "Liptovdky Mikulas",
+        "Detva",
+        "Zvolen",
+        "Zilina",
+        "Namestovo",
+        "Rimavska Sobota",
+        "Lucenec",
+        "Komarno",
+        "Brno Warsaw",
+        "Prague Frankfurt",
+        "Vienna",
+        "Gyor Budapest",
+        "Nove Zamky",
+        "Nitra",
+        "Trencin",
+        "Topolcany",
+        "Novaky",
+        "Prievidza",
+        "Piestany",
+        "Nove Mest nad Vahom",
+        "Spisska",
+        "Poprad",
+        "Banska Bystrica",
+        "Bratislava",
+        "Kosice",
+        "Presov",
+        "Bardejov",
+        "Svidnik",
+        "Humenne",
+        "Michalovce"
+    ],
+    "adjacency_list": {
+        "Ruzombernk": [
+            "Banska Bystrica"
+        ],
+        "Svit": [
+            "Kosice"
+        ],
+        "Liptovdky Mikulas": [
+            "Banska Bystrica"
+        ],
+        "Detva": [
+            "Rimavska Sobota",
+            "Banska Bystrica"
+        ],
+        "Zvolen": [
+            "Banska Bystrica"
+        ],
+        "Zilina": [
+            "Trencin",
+            "Poprad",
+            "Banska Bystrica"
+        ],
+        "Namestovo": [
+            "Banska Bystrica"
+        ],
+        "Rimavska Sobota": [
+            "Detva"
+        ],
+        "Lucenec": [
+            "Banska Bystrica"
+        ],
+        "Komarno": [
+            "Bratislava"
+        ],
+        "Brno Warsaw": [
+            "Bratislava"
+        ],
+        "Prague Frankfurt": [
+            "Bratislava"
+        ],
+        "Vienna": [
+            "Bratislava"
+        ],
+        "Gyor Budapest": [
+            "Bratislava"
+        ],
+        "Nove Zamky": [
+            "Bratislava"
+        ],
+        "Nitra": [
+            "Bratislava"
+        ],
+        "Trencin": [
+            "Zilina",
+            "Bratislava"
+        ],
+        "Topolcany": [
+            "Bratislava"
+        ],
+        "Novaky": [
+            "Banska Bystrica"
+        ],
+        "Prievidza": [
+            "Banska Bystrica"
+        ],
+        "Piestany": [
+            "Bratislava"
+        ],
+        "Nove Mest nad Vahom": [
+            "Bratislava"
+        ],
+        "Spisska": [
+            "Poprad",
+            "Kosice"
+        ],
+        "Poprad": [
+            "Zilina",
+            "Spisska",
+            "Presov"
+        ],
+        "Banska Bystrica": [
+            "Ruzombernk",
+            "Liptovdky Mikulas",
+            "Detva",
+            "Zvolen",
+            "Zilina",
+            "Namestovo",
+            "Lucenec",
+            "Novaky",
+            "Prievidza",
+            "Bratislava"
+        ],
+        "Bratislava": [
+            "Komarno",
+            "Brno Warsaw",
+            "Prague Frankfurt",
+            "Vienna",
+            "Gyor Budapest",
+            "Nove Zamky",
+            "Nitra",
+            "Trencin",
+            "Topolcany",
+            "Piestany",
+            "Nove Mest nad Vahom",
+            "Banska Bystrica",
+            "Kosice"
+        ],
+        "Kosice": [
+            "Svit",
+            "Spisska",
+            "Bratislava",
+            "Svidnik",
+            "Humenne",
+            "Michalovce",
+            "Presov"
+        ],
+        "Presov": [
+            "Poprad",
+            "Kosice",
+            "Bardejov"
+        ],
+        "Bardejov": [
+            "Presov"
+        ],
+        "Svidnik": [
+            "Kosice"
+        ],
+        "Humenne": [
+            "Kosice"
+        ],
+        "Michalovce": [
+            "Kosice"
+        ]
+    },
+    "dest": "Bratislava",
+    "property": {
+        "name": "reach-allsrc",
+        "params": {}
+    },
+    "info": {
+        "business_rel": {
+            "('Ruzombernk', 'Banska Bystrica')": "cust_prov",
+            "('Banska Bystrica', 'Ruzombernk')": "prov_cust",
+            "('Svit', 'Kosice')": "cust_prov",
+            "('Kosice', 'Svit')": "prov_cust",
+            "('Liptovdky Mikulas', 'Banska Bystrica')": "cust_prov",
+            "('Banska Bystrica', 'Liptovdky Mikulas')": "prov_cust",
+            "('Detva', 'Rimavska Sobota')": "prov_cust",
+            "('Rimavska Sobota', 'Detva')": "cust_prov",
+            "('Detva', 'Banska Bystrica')": "cust_prov",
+            "('Banska Bystrica', 'Detva')": "prov_cust",
+            "('Zvolen', 'Banska Bystrica')": "cust_prov",
+            "('Banska Bystrica', 'Zvolen')": "prov_cust",
+            "('Zilina', 'Trencin')": "peer_peer",
+            "('Trencin', 'Zilina')": "peer_peer",
+            "('Zilina', 'Poprad')": "peer_peer",
+            "('Poprad', 'Zilina')": "peer_peer",
+            "('Zilina', 'Banska Bystrica')": "cust_prov",
+            "('Banska Bystrica', 'Zilina')": "prov_cust",
+            "('Namestovo', 'Banska Bystrica')": "cust_prov",
+            "('Banska Bystrica', 'Namestovo')": "prov_cust",
+            "('Lucenec', 'Banska Bystrica')": "cust_prov",
+            "('Banska Bystrica', 'Lucenec')": "prov_cust",
+            "('Komarno', 'Bratislava')": "cust_prov",
+            "('Bratislava', 'Komarno')": "prov_cust",
+            "('Brno Warsaw', 'Bratislava')": "cust_prov",
+            "('Bratislava', 'Brno Warsaw')": "prov_cust",
+            "('Prague Frankfurt', 'Bratislava')": "cust_prov",
+            "('Bratislava', 'Prague Frankfurt')": "prov_cust",
+            "('Vienna', 'Bratislava')": "cust_prov",
+            "('Bratislava', 'Vienna')": "prov_cust",
+            "('Gyor Budapest', 'Bratislava')": "cust_prov",
+            "('Bratislava', 'Gyor Budapest')": "prov_cust",
+            "('Nove Zamky', 'Bratislava')": "cust_prov",
+            "('Bratislava', 'Nove Zamky')": "prov_cust",
+            "('Nitra', 'Bratislava')": "cust_prov",
+            "('Bratislava', 'Nitra')": "prov_cust",
+            "('Trencin', 'Bratislava')": "cust_prov",
+            "('Bratislava', 'Trencin')": "prov_cust",
+            "('Topolcany', 'Bratislava')": "cust_prov",
+            "('Bratislava', 'Topolcany')": "prov_cust",
+            "('Novaky', 'Banska Bystrica')": "cust_prov",
+            "('Banska Bystrica', 'Novaky')": "prov_cust",
+            "('Prievidza', 'Banska Bystrica')": "cust_prov",
+            "('Banska Bystrica', 'Prievidza')": "prov_cust",
+            "('Piestany', 'Bratislava')": "cust_prov",
+            "('Bratislava', 'Piestany')": "prov_cust",
+            "('Nove Mest nad Vahom', 'Bratislava')": "cust_prov",
+            "('Bratislava', 'Nove Mest nad Vahom')": "prov_cust",
+            "('Spisska', 'Poprad')": "prov_cust",
+            "('Poprad', 'Spisska')": "cust_prov",
+            "('Spisska', 'Kosice')": "cust_prov",
+            "('Kosice', 'Spisska')": "prov_cust",
+            "('Poprad', 'Presov')": "peer_peer",
+            "('Presov', 'Poprad')": "peer_peer",
+            "('Banska Bystrica', 'Bratislava')": "cust_prov",
+            "('Bratislava', 'Banska Bystrica')": "prov_cust",
+            "('Bratislava', 'Kosice')": "prov_cust",
+            "('Kosice', 'Bratislava')": "cust_prov",
+            "('Kosice', 'Svidnik')": "prov_cust",
+            "('Svidnik', 'Kosice')": "cust_prov",
+            "('Kosice', 'Humenne')": "prov_cust",
+            "('Humenne', 'Kosice')": "cust_prov",
+            "('Kosice', 'Michalovce')": "prov_cust",
+            "('Michalovce', 'Kosice')": "cust_prov",
+            "('Kosice', 'Presov')": "prov_cust",
+            "('Presov', 'Kosice')": "cust_prov",
+            "('Presov', 'Bardejov')": "prov_cust",
+            "('Bardejov', 'Presov')": "cust_prov"
+        }
+    },
+    "policy": {
+        "('Ruzombernk', 'Banska Bystrica')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Svit', 'Kosice')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Liptovdky Mikulas', 'Banska Bystrica')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Detva', 'Rimavska Sobota')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Detva', 'Banska Bystrica')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Zvolen', 'Banska Bystrica')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Zilina', 'Trencin')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Zilina', 'Poprad')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Zilina', 'Banska Bystrica')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Namestovo', 'Banska Bystrica')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Rimavska Sobota', 'Detva')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Lucenec', 'Banska Bystrica')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Komarno', 'Bratislava')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Brno Warsaw', 'Bratislava')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Prague Frankfurt', 'Bratislava')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Vienna', 'Bratislava')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Gyor Budapest', 'Bratislava')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Nove Zamky', 'Bratislava')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Nitra', 'Bratislava')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Trencin', 'Zilina')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Trencin', 'Bratislava')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Topolcany', 'Bratislava')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Novaky', 'Banska Bystrica')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Prievidza', 'Banska Bystrica')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Piestany', 'Bratislava')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Nove Mest nad Vahom', 'Bratislava')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Spisska', 'Poprad')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Spisska', 'Kosice')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Poprad', 'Zilina')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Poprad', 'Spisska')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Poprad', 'Presov')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Banska Bystrica', 'Ruzombernk')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Banska Bystrica', 'Liptovdky Mikulas')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Banska Bystrica', 'Detva')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Banska Bystrica', 'Zvolen')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Banska Bystrica', 'Zilina')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Banska Bystrica', 'Namestovo')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Banska Bystrica', 'Lucenec')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Banska Bystrica', 'Novaky')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Banska Bystrica', 'Prievidza')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Banska Bystrica', 'Bratislava')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Bratislava', 'Komarno')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Bratislava', 'Brno Warsaw')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Bratislava', 'Prague Frankfurt')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Bratislava', 'Vienna')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Bratislava', 'Gyor Budapest')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Bratislava', 'Nove Zamky')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Bratislava', 'Nitra')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Bratislava', 'Trencin')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Bratislava', 'Topolcany')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Bratislava', 'Piestany')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Bratislava', 'Nove Mest nad Vahom')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Bratislava', 'Banska Bystrica')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Bratislava', 'Kosice')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Kosice', 'Svit')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Kosice', 'Spisska')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Kosice', 'Bratislava')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Kosice', 'Svidnik')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Kosice', 'Humenne')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Kosice', 'Michalovce')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Kosice', 'Presov')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Presov', 'Poprad')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Presov', 'Kosice')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Presov', 'Bardejov')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Bardejov', 'Presov')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Svidnik', 'Kosice')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Humenne', 'Kosice')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Michalovce', 'Kosice')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ]
+    }
+}

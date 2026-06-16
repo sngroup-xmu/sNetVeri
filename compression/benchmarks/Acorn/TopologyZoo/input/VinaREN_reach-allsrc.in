@@ -1,0 +1,1670 @@
+{
+    "description": "Topology Zoo network VinaREN, with policy based on Gao-Rexford conditions.",
+    "nodes": [
+        "Hue",
+        "VN HN",
+        "HCM",
+        "DN",
+        "KR",
+        "JP",
+        "HK",
+        "CN",
+        "PH",
+        "Nha Trang",
+        "Vinh",
+        "Thai Nguyen",
+        "An Giang",
+        "Da Lat",
+        "Hai Phong",
+        "AU",
+        "CT",
+        "TH",
+        "MY",
+        "ID",
+        "EU",
+        "SG"
+    ],
+    "adjacency_list": {
+        "Hue": [
+            "DN"
+        ],
+        "VN HN": [
+            "HCM",
+            "DN",
+            "HK",
+            "Vinh",
+            "Thai Nguyen",
+            "Hai Phong"
+        ],
+        "HCM": [
+            "VN HN",
+            "CT",
+            "DN",
+            "Da Lat"
+        ],
+        "DN": [
+            "Hue",
+            "VN HN",
+            "HCM",
+            "Nha Trang"
+        ],
+        "KR": [
+            "SG"
+        ],
+        "JP": [
+            "PH",
+            "SG",
+            "HK"
+        ],
+        "HK": [
+            "VN HN",
+            "JP",
+            "SG",
+            "CN"
+        ],
+        "CN": [
+            "HK",
+            "EU"
+        ],
+        "PH": [
+            "JP"
+        ],
+        "Nha Trang": [
+            "DN"
+        ],
+        "Vinh": [
+            "VN HN"
+        ],
+        "Thai Nguyen": [
+            "VN HN"
+        ],
+        "An Giang": [
+            "CT"
+        ],
+        "Da Lat": [
+            "HCM"
+        ],
+        "Hai Phong": [
+            "VN HN"
+        ],
+        "AU": [
+            "SG"
+        ],
+        "CT": [
+            "HCM",
+            "An Giang"
+        ],
+        "TH": [
+            "SG"
+        ],
+        "MY": [
+            "SG"
+        ],
+        "ID": [
+            "SG"
+        ],
+        "EU": [
+            "CN",
+            "SG"
+        ],
+        "SG": [
+            "KR",
+            "JP",
+            "HK",
+            "AU",
+            "TH",
+            "MY",
+            "ID",
+            "EU"
+        ]
+    },
+    "dest": "SG",
+    "property": {
+        "name": "reach-allsrc",
+        "params": {}
+    },
+    "info": {
+        "business_rel": {
+            "('Hue', 'DN')": "cust_prov",
+            "('DN', 'Hue')": "prov_cust",
+            "('VN HN', 'HCM')": "prov_cust",
+            "('HCM', 'VN HN')": "cust_prov",
+            "('VN HN', 'DN')": "prov_cust",
+            "('DN', 'VN HN')": "cust_prov",
+            "('VN HN', 'HK')": "cust_prov",
+            "('HK', 'VN HN')": "prov_cust",
+            "('VN HN', 'Vinh')": "prov_cust",
+            "('Vinh', 'VN HN')": "cust_prov",
+            "('VN HN', 'Thai Nguyen')": "prov_cust",
+            "('Thai Nguyen', 'VN HN')": "cust_prov",
+            "('VN HN', 'Hai Phong')": "prov_cust",
+            "('Hai Phong', 'VN HN')": "cust_prov",
+            "('HCM', 'CT')": "prov_cust",
+            "('CT', 'HCM')": "cust_prov",
+            "('HCM', 'DN')": "peer_peer",
+            "('DN', 'HCM')": "peer_peer",
+            "('HCM', 'Da Lat')": "prov_cust",
+            "('Da Lat', 'HCM')": "cust_prov",
+            "('DN', 'Nha Trang')": "prov_cust",
+            "('Nha Trang', 'DN')": "cust_prov",
+            "('KR', 'SG')": "cust_prov",
+            "('SG', 'KR')": "prov_cust",
+            "('JP', 'PH')": "prov_cust",
+            "('PH', 'JP')": "cust_prov",
+            "('JP', 'SG')": "cust_prov",
+            "('SG', 'JP')": "prov_cust",
+            "('JP', 'HK')": "peer_peer",
+            "('HK', 'JP')": "peer_peer",
+            "('HK', 'SG')": "cust_prov",
+            "('SG', 'HK')": "prov_cust",
+            "('HK', 'CN')": "prov_cust",
+            "('CN', 'HK')": "cust_prov",
+            "('CN', 'EU')": "cust_prov",
+            "('EU', 'CN')": "prov_cust",
+            "('An Giang', 'CT')": "cust_prov",
+            "('CT', 'An Giang')": "prov_cust",
+            "('AU', 'SG')": "cust_prov",
+            "('SG', 'AU')": "prov_cust",
+            "('TH', 'SG')": "cust_prov",
+            "('SG', 'TH')": "prov_cust",
+            "('MY', 'SG')": "cust_prov",
+            "('SG', 'MY')": "prov_cust",
+            "('ID', 'SG')": "cust_prov",
+            "('SG', 'ID')": "prov_cust",
+            "('EU', 'SG')": "cust_prov",
+            "('SG', 'EU')": "prov_cust"
+        }
+    },
+    "policy": {
+        "('Hue', 'DN')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('VN HN', 'HCM')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('VN HN', 'DN')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('VN HN', 'HK')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('VN HN', 'Vinh')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('VN HN', 'Thai Nguyen')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('VN HN', 'Hai Phong')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('HCM', 'VN HN')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('HCM', 'CT')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('HCM', 'DN')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('HCM', 'Da Lat')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('DN', 'Hue')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('DN', 'VN HN')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('DN', 'HCM')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('DN', 'Nha Trang')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('KR', 'SG')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('JP', 'PH')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('JP', 'SG')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('JP', 'HK')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('HK', 'VN HN')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('HK', 'JP')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('HK', 'SG')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('HK', 'CN')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('CN', 'HK')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('CN', 'EU')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('PH', 'JP')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Nha Trang', 'DN')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Vinh', 'VN HN')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Thai Nguyen', 'VN HN')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('An Giang', 'CT')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Da Lat', 'HCM')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Hai Phong', 'VN HN')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('AU', 'SG')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('CT', 'HCM')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('CT', 'An Giang')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('TH', 'SG')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('MY', 'SG')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('ID', 'SG')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('EU', 'CN')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('EU', 'SG')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('SG', 'KR')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('SG', 'JP')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('SG', 'HK')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('SG', 'AU')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('SG', 'TH')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('SG', 'MY')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('SG', 'ID')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('SG', 'EU')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ]
+    }
+}

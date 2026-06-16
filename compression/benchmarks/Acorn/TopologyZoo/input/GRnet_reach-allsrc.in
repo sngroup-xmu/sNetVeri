@@ -1,0 +1,2856 @@
+{
+    "description": "Topology Zoo network GRnet, with policy based on Gao-Rexford conditions.",
+    "nodes": [
+        "Karditsa",
+        "Volos",
+        "Larissa",
+        "Trikala",
+        "Mytilini",
+        "Chios",
+        "Igoumenitsa",
+        "Kerkira",
+        "Ermoupoli",
+        "Mykonos",
+        "Mesologgi",
+        "AMSIX",
+        "GRIX",
+        "Chania",
+        "Heraklio",
+        "Rethymno",
+        "Pylos",
+        "Kalamata",
+        "Halkida",
+        "Athens",
+        "Rhodos",
+        "Karlovassi",
+        "Tripoli",
+        "Patra",
+        "Kalavrita",
+        "Korinthos",
+        "Limnos",
+        "Ioannina",
+        "Serres",
+        "Thessaloniki",
+        "Edessa",
+        "Kastoria",
+        "Kavala",
+        "Xanthi",
+        "Komotini",
+        "Alexandroupoli"
+    ],
+    "adjacency_list": {
+        "Karditsa": [
+            "Larissa"
+        ],
+        "Volos": [
+            "Larissa"
+        ],
+        "Larissa": [
+            "Karditsa",
+            "Volos",
+            "Trikala",
+            "Athens",
+            "Thessaloniki"
+        ],
+        "Trikala": [
+            "Larissa"
+        ],
+        "Mytilini": [
+            "Limnos",
+            "Chios"
+        ],
+        "Chios": [
+            "Mytilini",
+            "Ermoupoli"
+        ],
+        "Igoumenitsa": [
+            "Ioannina",
+            "Kerkira"
+        ],
+        "Kerkira": [
+            "Igoumenitsa"
+        ],
+        "Ermoupoli": [
+            "Chios",
+            "Mykonos",
+            "Xanthi",
+            "Athens",
+            "Heraklio"
+        ],
+        "Mykonos": [
+            "Ermoupoli",
+            "Karlovassi"
+        ],
+        "Mesologgi": [
+            "Patra"
+        ],
+        "AMSIX": [
+            "Athens"
+        ],
+        "GRIX": [
+            "Athens"
+        ],
+        "Chania": [
+            "Athens",
+            "Heraklio"
+        ],
+        "Heraklio": [
+            "Ermoupoli",
+            "Chania",
+            "Rethymno",
+            "Athens",
+            "Rhodos"
+        ],
+        "Rethymno": [
+            "Heraklio"
+        ],
+        "Pylos": [
+            "Kalamata"
+        ],
+        "Kalamata": [
+            "Pylos",
+            "Patra"
+        ],
+        "Halkida": [
+            "Athens"
+        ],
+        "Athens": [
+            "Larissa",
+            "Ermoupoli",
+            "AMSIX",
+            "GRIX",
+            "Chania",
+            "Heraklio",
+            "Halkida",
+            "Patra",
+            "Korinthos",
+            "Thessaloniki"
+        ],
+        "Rhodos": [
+            "Heraklio",
+            "Karlovassi"
+        ],
+        "Karlovassi": [
+            "Mykonos",
+            "Rhodos"
+        ],
+        "Tripoli": [
+            "Korinthos"
+        ],
+        "Patra": [
+            "Mesologgi",
+            "Kalamata",
+            "Athens",
+            "Kalavrita",
+            "Ioannina"
+        ],
+        "Kalavrita": [
+            "Patra"
+        ],
+        "Korinthos": [
+            "Athens",
+            "Tripoli"
+        ],
+        "Limnos": [
+            "Mytilini"
+        ],
+        "Ioannina": [
+            "Igoumenitsa",
+            "Patra",
+            "Thessaloniki"
+        ],
+        "Serres": [
+            "Thessaloniki"
+        ],
+        "Thessaloniki": [
+            "Larissa",
+            "Athens",
+            "Ioannina",
+            "Serres",
+            "Xanthi",
+            "Edessa"
+        ],
+        "Edessa": [
+            "Thessaloniki",
+            "Kastoria"
+        ],
+        "Kastoria": [
+            "Edessa"
+        ],
+        "Kavala": [
+            "Xanthi"
+        ],
+        "Xanthi": [
+            "Ermoupoli",
+            "Thessaloniki",
+            "Kavala",
+            "Komotini"
+        ],
+        "Komotini": [
+            "Xanthi",
+            "Alexandroupoli"
+        ],
+        "Alexandroupoli": [
+            "Komotini"
+        ]
+    },
+    "dest": "Athens",
+    "property": {
+        "name": "reach-allsrc",
+        "params": {}
+    },
+    "info": {
+        "business_rel": {
+            "('Karditsa', 'Larissa')": "cust_prov",
+            "('Larissa', 'Karditsa')": "prov_cust",
+            "('Volos', 'Larissa')": "cust_prov",
+            "('Larissa', 'Volos')": "prov_cust",
+            "('Larissa', 'Trikala')": "prov_cust",
+            "('Trikala', 'Larissa')": "cust_prov",
+            "('Larissa', 'Athens')": "cust_prov",
+            "('Athens', 'Larissa')": "prov_cust",
+            "('Larissa', 'Thessaloniki')": "peer_peer",
+            "('Thessaloniki', 'Larissa')": "peer_peer",
+            "('Mytilini', 'Limnos')": "prov_cust",
+            "('Limnos', 'Mytilini')": "cust_prov",
+            "('Mytilini', 'Chios')": "cust_prov",
+            "('Chios', 'Mytilini')": "prov_cust",
+            "('Chios', 'Ermoupoli')": "cust_prov",
+            "('Ermoupoli', 'Chios')": "prov_cust",
+            "('Igoumenitsa', 'Ioannina')": "cust_prov",
+            "('Ioannina', 'Igoumenitsa')": "prov_cust",
+            "('Igoumenitsa', 'Kerkira')": "prov_cust",
+            "('Kerkira', 'Igoumenitsa')": "cust_prov",
+            "('Ermoupoli', 'Mykonos')": "prov_cust",
+            "('Mykonos', 'Ermoupoli')": "cust_prov",
+            "('Ermoupoli', 'Xanthi')": "peer_peer",
+            "('Xanthi', 'Ermoupoli')": "peer_peer",
+            "('Ermoupoli', 'Athens')": "cust_prov",
+            "('Athens', 'Ermoupoli')": "prov_cust",
+            "('Ermoupoli', 'Heraklio')": "peer_peer",
+            "('Heraklio', 'Ermoupoli')": "peer_peer",
+            "('Mykonos', 'Karlovassi')": "prov_cust",
+            "('Karlovassi', 'Mykonos')": "cust_prov",
+            "('Mesologgi', 'Patra')": "cust_prov",
+            "('Patra', 'Mesologgi')": "prov_cust",
+            "('AMSIX', 'Athens')": "cust_prov",
+            "('Athens', 'AMSIX')": "prov_cust",
+            "('GRIX', 'Athens')": "cust_prov",
+            "('Athens', 'GRIX')": "prov_cust",
+            "('Chania', 'Athens')": "cust_prov",
+            "('Athens', 'Chania')": "prov_cust",
+            "('Chania', 'Heraklio')": "peer_peer",
+            "('Heraklio', 'Chania')": "peer_peer",
+            "('Heraklio', 'Rethymno')": "prov_cust",
+            "('Rethymno', 'Heraklio')": "cust_prov",
+            "('Heraklio', 'Athens')": "cust_prov",
+            "('Athens', 'Heraklio')": "prov_cust",
+            "('Heraklio', 'Rhodos')": "prov_cust",
+            "('Rhodos', 'Heraklio')": "cust_prov",
+            "('Pylos', 'Kalamata')": "cust_prov",
+            "('Kalamata', 'Pylos')": "prov_cust",
+            "('Kalamata', 'Patra')": "cust_prov",
+            "('Patra', 'Kalamata')": "prov_cust",
+            "('Halkida', 'Athens')": "cust_prov",
+            "('Athens', 'Halkida')": "prov_cust",
+            "('Athens', 'Patra')": "prov_cust",
+            "('Patra', 'Athens')": "cust_prov",
+            "('Athens', 'Korinthos')": "prov_cust",
+            "('Korinthos', 'Athens')": "cust_prov",
+            "('Athens', 'Thessaloniki')": "prov_cust",
+            "('Thessaloniki', 'Athens')": "cust_prov",
+            "('Rhodos', 'Karlovassi')": "prov_cust",
+            "('Karlovassi', 'Rhodos')": "cust_prov",
+            "('Tripoli', 'Korinthos')": "cust_prov",
+            "('Korinthos', 'Tripoli')": "prov_cust",
+            "('Patra', 'Kalavrita')": "prov_cust",
+            "('Kalavrita', 'Patra')": "cust_prov",
+            "('Patra', 'Ioannina')": "peer_peer",
+            "('Ioannina', 'Patra')": "peer_peer",
+            "('Ioannina', 'Thessaloniki')": "cust_prov",
+            "('Thessaloniki', 'Ioannina')": "prov_cust",
+            "('Serres', 'Thessaloniki')": "cust_prov",
+            "('Thessaloniki', 'Serres')": "prov_cust",
+            "('Thessaloniki', 'Xanthi')": "prov_cust",
+            "('Xanthi', 'Thessaloniki')": "cust_prov",
+            "('Thessaloniki', 'Edessa')": "prov_cust",
+            "('Edessa', 'Thessaloniki')": "cust_prov",
+            "('Edessa', 'Kastoria')": "prov_cust",
+            "('Kastoria', 'Edessa')": "cust_prov",
+            "('Kavala', 'Xanthi')": "cust_prov",
+            "('Xanthi', 'Kavala')": "prov_cust",
+            "('Xanthi', 'Komotini')": "prov_cust",
+            "('Komotini', 'Xanthi')": "cust_prov",
+            "('Komotini', 'Alexandroupoli')": "prov_cust",
+            "('Alexandroupoli', 'Komotini')": "cust_prov"
+        }
+    },
+    "policy": {
+        "('Karditsa', 'Larissa')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Volos', 'Larissa')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Larissa', 'Karditsa')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Larissa', 'Volos')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Larissa', 'Trikala')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Larissa', 'Athens')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Larissa', 'Thessaloniki')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Trikala', 'Larissa')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Mytilini', 'Limnos')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Mytilini', 'Chios')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Chios', 'Mytilini')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Chios', 'Ermoupoli')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Igoumenitsa', 'Ioannina')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Igoumenitsa', 'Kerkira')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Kerkira', 'Igoumenitsa')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Ermoupoli', 'Chios')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Ermoupoli', 'Mykonos')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Ermoupoli', 'Xanthi')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Ermoupoli', 'Athens')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Ermoupoli', 'Heraklio')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Mykonos', 'Ermoupoli')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Mykonos', 'Karlovassi')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Mesologgi', 'Patra')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('AMSIX', 'Athens')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('GRIX', 'Athens')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Chania', 'Athens')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Chania', 'Heraklio')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Heraklio', 'Ermoupoli')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Heraklio', 'Chania')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Heraklio', 'Rethymno')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Heraklio', 'Athens')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Heraklio', 'Rhodos')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Rethymno', 'Heraklio')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Pylos', 'Kalamata')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Kalamata', 'Pylos')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Kalamata', 'Patra')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Halkida', 'Athens')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Athens', 'Larissa')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Athens', 'Ermoupoli')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Athens', 'AMSIX')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Athens', 'GRIX')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Athens', 'Chania')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Athens', 'Heraklio')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Athens', 'Halkida')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Athens', 'Patra')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Athens', 'Korinthos')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Athens', 'Thessaloniki')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Rhodos', 'Heraklio')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Rhodos', 'Karlovassi')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Karlovassi', 'Mykonos')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Karlovassi', 'Rhodos')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Tripoli', 'Korinthos')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Patra', 'Mesologgi')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Patra', 'Kalamata')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Patra', 'Athens')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Patra', 'Kalavrita')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Patra', 'Ioannina')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Kalavrita', 'Patra')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Korinthos', 'Athens')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Korinthos', 'Tripoli')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Limnos', 'Mytilini')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Ioannina', 'Igoumenitsa')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Ioannina', 'Patra')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Ioannina', 'Thessaloniki')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Serres', 'Thessaloniki')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Thessaloniki', 'Larissa')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Thessaloniki', 'Athens')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Thessaloniki', 'Ioannina')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Thessaloniki', 'Serres')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Thessaloniki', 'Xanthi')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Thessaloniki', 'Edessa')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Edessa', 'Thessaloniki')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Edessa', 'Kastoria')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Kastoria', 'Edessa')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Kavala', 'Xanthi')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Xanthi', 'Ermoupoli')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 1,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 200,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Xanthi', 'Thessaloniki')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Xanthi', 'Kavala')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Xanthi', 'Komotini')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Komotini', 'Xanthi')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ],
+        "('Komotini', 'Alexandroupoli')": [
+            {
+                "match": [],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 2,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 100,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            }
+        ],
+        "('Alexandroupoli', 'Komotini')": [
+            {
+                "match": [
+                    {
+                        "match_attr": "comm",
+                        "match_vals": [
+                            0
+                        ]
+                    }
+                ],
+                "actions": [
+                    {
+                        "set_attr": "comm",
+                        "set_val": 0,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "lp",
+                        "set_val": 300,
+                        "set_type": "set"
+                    },
+                    {
+                        "set_attr": "pathlen",
+                        "set_val": 1,
+                        "set_type": "incr"
+                    }
+                ],
+                "seq_num": 10,
+                "result": "permit"
+            },
+            {
+                "match": [],
+                "actions": [],
+                "seq_num": 20,
+                "result": "deny"
+            }
+        ]
+    }
+}

@@ -1,0 +1,11 @@
+
+==============================
+Role            | Group Count
+------------------------------
+Router          | 9         
+==============================
+Node Count: 23
+Edge Count:50
+Total Groups: 9
+Total Compressed Edge:20
+Compression Time: 0.0017s

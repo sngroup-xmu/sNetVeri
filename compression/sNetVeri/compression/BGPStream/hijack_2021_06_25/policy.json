@@ -1,0 +1,102 @@
+[
+    {
+        "name": "null",
+        "id": 0,
+        "policy": []
+    },
+    {
+        "name": "policy_1",
+        "id": 1,
+        "policy": [
+            {
+                "node": "10",
+                "rule": "permit",
+                "matchConditions": [
+                    {
+                        "type": "ip_community_filter",
+                        "policy": "0",
+                        "matchMode": "permit"
+                    }
+                ],
+                "ApplyActionDto": {
+                    "communityValue": "1",
+                    "asPath": "65000",
+                    "asPathOperation": "additive",
+                    "med": "null",
+                    "locPrf": "200",
+                    "preferredValue": "null"
+                }
+            },
+            {
+                "node": "20",
+                "rule": "deny",
+                "matchConditions": [],
+                "ApplyActionDto": {
+                    "communityValue": "0",
+                    "asPath": "null",
+                    "asPathOperation": "null",
+                    "med": "null",
+                    "locPrf": "null",
+                    "preferredValue": "null"
+                }
+            }
+        ]
+    },
+    {
+        "name": "policy_2",
+        "id": 2,
+        "policy": [
+            {
+                "node": "10",
+                "rule": "permit",
+                "matchConditions": [],
+                "ApplyActionDto": {
+                    "communityValue": "2",
+                    "asPath": "65000",
+                    "asPathOperation": "additive",
+                    "med": "null",
+                    "locPrf": "100",
+                    "preferredValue": "null"
+                }
+            }
+        ]
+    },
+    {
+        "name": "policy_3",
+        "id": 3,
+        "policy": [
+            {
+                "node": "10",
+                "rule": "permit",
+                "matchConditions": [
+                    {
+                        "type": "ip_community_filter",
+                        "policy": "0",
+                        "matchMode": "permit"
+                    }
+                ],
+                "ApplyActionDto": {
+                    "communityValue": "0",
+                    "asPath": "65001",
+                    "asPathOperation": "additive",
+                    "med": "null",
+                    "locPrf": "300",
+                    "preferredValue": "null"
+                }
+            },
+            {
+                "node": "20",
+                "rule": "deny",
+                "matchConditions": [],
+                "ApplyActionDto": {
+                    "communityValue": "0",
+                    "asPath": "null",
+                    "asPathOperation": "null",
+                    "med": "null",
+                    "locPrf": "null",
+                    "preferredValue": "null"
+                }
+            }
+        ]
+    }
+]
