@@ -419,7 +419,7 @@ def run_batch_processing():
     base_output_root = os.path.join(script_dir, "compression")
 
     for folder_path, topo_type in config_map.items():
-        print(f"\n检查目录: {folder_path}")
+        print(f"\nChecking directory: {folder_path}")
 
         if not os.path.exists(folder_path):
             continue
@@ -459,8 +459,8 @@ def run_batch_processing():
                     # --- 执行复制 policy.json 到目标输出目录 ---
                     target_policy_path = os.path.join(network_output_dir, "policy.json")
                     shutil.copy2(policy_file, target_policy_path)
-                    print(f"  处理: {os.path.basename(net_file)}")
-                    print(f"  复制 Policy 至: {target_policy_path}")
+                    print(f"  Processing: {os.path.basename(net_file)}")
+                    print(f"  Copied policy to: {target_policy_path}")
                 target_topo_path = os.path.join(network_output_dir, "topo.json")
                 shutil.copy2(net_file, target_topo_path)
                 try:
@@ -471,8 +471,8 @@ def run_batch_processing():
                         output_path=network_output_dir
                     )
                 except Exception as e:
-                    print(f"  错误: {str(e)}")
-                    print(f"  复制 Policy 至: {target_policy_path}")
+                    print(f"  Error: {str(e)}")
+                    print(f"  Copied policy to: {target_policy_path}")
 
 
 if __name__ == '__main__':

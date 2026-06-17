@@ -176,7 +176,7 @@ def print_compressed_results(compressible_nodes, output_dir="./"):
         with open(file_path, 'w', encoding='utf-8') as f:
             json.dump(output_data, f, indent=4, ensure_ascii=False)
 
-        print(f"已生成文件: {file_path}")
+        print(f"Generated file: {file_path}")
 
 def generate_compressed_topology(nodes, compression_result,name,output_dir="output"):
     if not os.path.exists(output_dir):
@@ -259,7 +259,7 @@ def run_batch_processing(input_dir,count):
     script_dir = os.path.dirname(os.path.abspath(__file__))
     base_output_root = os.path.join(script_dir, ".")
     folder_path=input_dir
-    print(f"\n检查目录: {folder_path}")
+    print(f"\nChecking directory: {folder_path}")
 
     if not os.path.exists(folder_path):
         return
@@ -311,7 +311,7 @@ def run_batch_processing(input_dir,count):
                     compressible_nodes = compress_topology(network, dest_nodes_ips, polices)
                     compression_edges=generate_compressed_topology(network, compressible_nodes,  name.replace("_network", ""),output_dir=target_output_dir)
                 except Exception as e:
-                    print(f"  错误: {str(e)}")
+                    print(f"  Error: {str(e)}")
                 end_time2=time.time()
                 execution_time1 = end_time1 - start_time1
                 execution_time2 = end_time2 - start_time2

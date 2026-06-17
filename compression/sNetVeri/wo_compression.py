@@ -159,10 +159,10 @@ if __name__ == '__main__':
     network_files = find_all_network_files(input_dir)
 
     if not network_files:
-        print("未找到 *_network.json 文件")
+        print("No *_network.json files found")
         sys.exit(0)
 
-    print(f"共找到 {len(network_files)} 个 network 文件\n")
+    print(f"Found {len(network_files)} network files\n")
 
     for network_file in network_files:
         change_format(network_file, f"./wo_compression/{network_type}", network_type)

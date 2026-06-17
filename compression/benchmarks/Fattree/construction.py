@@ -281,7 +281,7 @@ def generate_fattree(k,type):
     k: 端口数 (必须为偶数)
     """
     if k % 2 != 0:
-        raise ValueError("k 必须是偶数")
+        raise ValueError("k must be even")
     nodes = []
     adj = {}
     dest=[]
@@ -379,7 +379,7 @@ def batch_process_fattrees(output_dir, start=40, end=90, dest_type="single",type
         for k in range(start, end + 1, 10):
 
             base_name = f"fattree-{k}-{t}"
-            print(f"正在处理模式 {t} 的规模 k={k} ...")
+            print(f"Processing mode {t} with k={k} ...")
             start_time = time.time()
             # 1. 生成拓扑和策略 ID 映射
             nodes, adj, dest, policy_id = generate_fattree(k, t)
@@ -417,14 +417,14 @@ def batch_process_fattrees(output_dir, start=40, end=90, dest_type="single",type
                     network_output
                 )
             except Exception as e:
-                print(f"处理 {base_name} 时发生错误: {e}")
+                print(f"Error while processing {base_name}: {e}")
             end_time = time.time()
             execution_time = end_time - start_time
             edges=0
             for n in adj:
                 edges += len(adj[n])
             export_results(nodes=len(nodes), edges=edges, execution_time=execution_time, result_file=parse_output)
-    print("\n所有任务处理完成！")
+    print("\nAll tasks completed.")
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(

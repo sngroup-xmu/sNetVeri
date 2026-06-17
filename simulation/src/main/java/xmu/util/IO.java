@@ -253,7 +253,7 @@ public class IO {
                         StandardOpenOption.TRUNCATE_EXISTING);
             }
         } catch (IOException e) {
-            System.err.println("处理文件失败: " + filePath);
+            System.err.println("Failed to process file: " + filePath);
             e.printStackTrace();
         }
     }

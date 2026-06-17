@@ -10,17 +10,17 @@ from collections import defaultdict
 
 def read_acorn_input(file_path):
     if not os.path.exists(file_path):
-        raise FileNotFoundError(f"找不到文件: {file_path}")
+        raise FileNotFoundError(f"File not found: {file_path}")
 
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
             return data
     except json.JSONDecodeError as e:
-        print(f"文件格式错误，无法解析 JSON: {e}")
+        print(f"Invalid file format; failed to parse JSON: {e}")
         return None
     except Exception as e:
-        print(f"读取文件时发生错误: {e}")
+        print(f"Error while reading file: {e}")
         return None
 def generate_as(nodes,start=65000):
     as_map={}
@@ -122,7 +122,7 @@ def generate_policy(policies,device_as,output_file):
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(unique_policies, f, indent=4, ensure_ascii=False)
 
-    print(f"策略去重完成！总条数: {len(policies)}, 去重后唯一策略数: {len(unique_policies)}")
+    print(f"Policy deduplication completed. Total policies: {len(policies)}, unique policies: {len(unique_policies)}")
 
     # 返回 key 对应 ID 的映射，供构建 edgeList 使用
     return key_to_policy_id
@@ -364,19 +364,19 @@ def export_results(nodes=0,edges=0,execution_time=0.0,result_file="parse.txt"):
 def batch_process_acorn_files(input_dir, output_dir,dest_type):
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
-        print(f"创建输出目录: {output_dir}")
+        print(f"Created output directory: {output_dir}")
     print(os.listdir(input_dir))
         # 2. 匹配文件夹下所有以 reach-allsrc.in 结尾的文件
     search_pattern = os.path.join(input_dir, "*reach-allsrc.in")
     files = glob.glob(search_pattern)
 
-    print(f"找到 {len(files)} 个待处理文件...")
+    print(f"Found {len(files)} files to process...")
 
     for file_path in files:
         # 提取文件名（不含路径和扩展名），用于生成输出文件名
         # 例如: hijack_2021_06_22_2_reach-allsrc.in -> hijack_2021_06_22_2
         base_name = os.path.basename(file_path).replace("_reach-allsrc.in", "")
-        print(f"正在处理: {base_name} ...")
+        print(f"Processing: {base_name} ...")
         start_time = time.time()
         acorn_data = read_acorn_input(file_path)
         device_ips = generate_device_ips(acorn_data["nodes"])
