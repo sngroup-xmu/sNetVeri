@@ -178,7 +178,6 @@ java -jar target/sNetVeri-1.0-SNAPSHOT.jar \
 - `--configPath`：包含 `topo.json` 和 `policy.json` 的目录。
 - `--batchSize`：按前缀分批计算的批大小。
 - `--print`：`0` 不输出验证输入；`1` 输出 `routes/` 和 `results/`。
-- `--printDevice`：逗号分隔的设备 IP 列表。当前代码保留该参数接口，但仿真主流程不再按该列表过滤输出。
 
 当 `--print 1` 时，仿真器会在 `<configPath>/` 下生成：
 
