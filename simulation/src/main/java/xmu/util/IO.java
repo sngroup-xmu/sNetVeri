@@ -279,8 +279,8 @@ public class IO {
                                    IP nexthop=route.getNextHop();
                                    pnode.getPeerList().forEach((remoteIP,peer)->{
                                    if(peer.getLocalInterfaceIp().equals(nexthop)){
-                                       IP remoteRouterId=context.getRouterId(remoteIP);
-                                       int remoteNodeId=context.getNode(remoteRouterId).getNodeId();
+//                                       IP remoteRouterId=context.getRouterId(remoteIP);
+//                                       int remoteNodeId=context.getNode(remoteRouterId).getNodeId();
                                        if (!context.getAllBgpPrefix().containsKey(route.getDestination())) return;
                                        try {
                                            writer.write("  {\n");
@@ -290,7 +290,7 @@ public class IO {
 
                                            // nexthop_infs
                                            writer.write("    \"nexthop_infs\": [\n");
-                                           writer.write("        \"" + "Node" + node.getNodeId() + "->" + "Node" + remoteNodeId + "\"\n");
+                                           writer.write("        \"" + "Node" + node.getNodeId() + "->" + "Node" + node.getNodeId()  + "\"\n");
                                            writer.write("    ],\n");
                                            writer.write("    \"devices\": [\n");
                                            writer.write("        \"" + deviceIp + "\"\n");
@@ -302,6 +302,39 @@ public class IO {
                                    }
                                    });
                                });
+                            });
+                        });
+                        node.rib.getStaticRoutes().forEach((ip,map)->{PhysicalNode pnode=node.getPhysicalNodeMap().get(ip);
+                            IP deviceIp=context.getDeviceIP(ip);
+                            map.forEach((subnet,routes)->{
+                                routes.forEach(route->{
+                                    IP nexthop=route.getNextHop();
+                                    pnode.getPeerList().forEach((remoteIP,peer)->{
+                                        if(peer.getLocalInterfaceIp().equals(nexthop)){
+//                                       IP remoteRouterId=context.getRouterId(remoteIP);
+//                                       int remoteNodeId=context.getNode(remoteRouterId).getNodeId();
+                                       if (!node.rib.getDirectRoutes().containsKey(ip)||!node.rib.getDirectRoutes().get(ip).containsKey(route.getDestination())) return;
+                                       if (!context.getAllBgpPrefix().containsKey(route.getDestination())) return;
+                                            try {
+                                                writer.write("  {\n");
+                                                writer.write("    \"action\": \"ANY\",\n");
+                                                writer.write("    \"prefix\": \"" + route.getDestination().getBaseAddress().toString() + "\",\n");
+                                                writer.write("    \"prefix_len\": " + route.getDestination().getPrefixLength() + ",\n");
+
+                                                // nexthop_infs
+                                                writer.write("    \"nexthop_infs\": [\n");
+                                                writer.write("        \"" + "Node" + node.getNodeId() + "->" + "Node" + node.getNodeId()  + "\"\n");
+                                                writer.write("    ],\n");
+                                                writer.write("    \"devices\": [\n");
+                                                writer.write("        \"" + deviceIp + "\"\n");
+                                                writer.write("    ]\n");
+                                                writer.write("  },\n");
+                                            } catch (IOException e) {
+                                                throw new RuntimeException(e);
+                                            }
+                                        }
+                                    });
+                                });
                             });
                         });
                     }
